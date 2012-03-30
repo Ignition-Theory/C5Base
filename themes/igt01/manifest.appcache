@@ -1,0 +1,43 @@
+CACHE MANIFEST
+
+# version 2012-03-29 17:04:39
+
+CACHE:
+# html files
+elements/page_footer.php
+elements/page_header.php
+elements/html_head.php
+elements/html_foot.php
+view.php
+default.php
+vertical_split.php
+threecol.php
+twocol.php
+right_sidebar.php
+left_sidebar.php
+no-background.php
+
+
+# css files
+css/bc48.css
+
+
+
+# js files
+js/0ea9.js
+js/libs/modernizr-2.5.3-respond-1.1.0.min.js
+js/libs/less-1.3.0.min.js
+
+
+
+# image files
+img/offline.jpg
+img/glyphicons-halflings.png
+img/glyphicons-halflings-white.png
+
+FALLBACK:
+
+files/ themes/igt01_dev/img/offline.jpg
+
+NETWORK:
+*

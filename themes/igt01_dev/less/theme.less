@@ -1,0 +1,257 @@
+/* Theme.css
+   ==========================================================================
+   Basic block area positioning, page layouts & styling
+   ========================================================================== */
+
+
+/*  Global Classes
+	========================================================================= */
+
+body {
+	background: #4E6678 url(../img/bg-body.jpg) left top repeat;
+}
+
+/*  Layout & Positioning
+	========================================================================= */
+	
+	
+/*  Site Heading
+	------------------------------------------------------------------------- */
+	
+.wrapper-header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	background: #11161A url(../img/bg-header.svg) center top no-repeat; /* Old browsers */
+	
+	border-bottom: rgba(255,255,255,0.6) 1px solid;
+}
+	
+.site-header {
+
+}
+		
+.site-logo {
+	max-width: 300px;
+	margin: 0 auto 20px;
+	padding: 0 20%;
+	
+	-moz-background-image: url(../img/bg-logo-left.png), url(../img/bg-logo-right.png);
+	background-image: url(../img/bg-logo-left.png), url(../img/bg-logo-right.png);
+	background-position: left bottom, right bottom;
+	background-size: contain, contain;
+	background-repeat: no-repeat, no-repeat
+}
+
+.site-name {
+	margin: 0 auto 20px;
+}
+			
+.site-top {
+	position: absolute;
+	top:0;
+	margin: 20px 0;
+	width: 15%;
+}
+
+.site-strapline {
+	float: left;
+	width: 42.3%;
+	padding: 0 2.5%
+}
+
+.wrapper-strapline {
+	margin: 20px 0 0 0;
+}
+
+.site-strapline-left {
+	float: left;
+	width: 26.3%;
+	height: 31px;
+	background: url(../img/bg-strapline-left.png) left center no-repeat;
+}
+
+.site-strapline-right {
+	float: right;
+	width: 26.3%;
+	height: 31px;
+	background: url(../img/bg-strapline-right.png) right center no-repeat;
+}
+
+.site-navigation {
+	margin: 20px 0 0 0;
+}
+
+/*  Site Content
+	------------------------------------------------------------------------- */
+
+.wrapper-content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Site Footer
+	------------------------------------------------------------------------- */
+	
+.wrapper-footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	background: #11161A url(../img/bg-header.svg) center top no-repeat; /* Old browsers */
+	
+	border-bottom: rgba(255,255,255,0.6) 1px solid;
+	
+	box-shadow: rgba(0,0,0,0.8) 0 0 8px inset;
+}
+	
+.wrapper-footer-2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*  Content Areas
+	========================================================================= */
+
+.contentBox {
+	margin: 10px 0;
+	padding: 20px;
+	background: #F2ECDA url(../img/bg-contentbox.jpg) left top repeat;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	-webkit-box-shadow: rgba(255,255,255,1) -1px -1px 0, rgba(0,0,0,0.4) 3px 3px 2px;
+	-moz-box-shadow: rgba(255,255,255,1) -1px -1px 0, rgba(0,0,0,0.4) 3px 3px 2px;
+	box-shadow: rgba(255,255,255,1) -1px -1px 0, rgba(0,0,0,0.4) 3px 3px 2px;
+}
+
+.sidebarBox {
+	margin: 10px 0;
+	padding: 20px;
+
+	background: rgb(45,46,47); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(45,46,47,1) 0%, rgba(17,22,26,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(45,46,47,1)), color-stop(100%,rgba(17,22,26,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(45,46,47,1) 0%,rgba(17,22,26,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(45,46,47,1) 0%,rgba(17,22,26,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(45,46,47,1) 0%,rgba(17,22,26,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(45,46,47,1) 0%,rgba(17,22,26,1) 100%); /* W3C */
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	-webkit-box-shadow: rgba(255,255,255,.3) -1px -1px 0, rgba(0,0,0,0.4) 3px 3px 2px;
+	-moz-box-shadow: rgba(255,255,255,.3) -1px -1px 0, rgba(0,0,0,0.4) 3px 3px 2px;
+	box-shadow: rgba(255,255,255,.3) -1px -1px 0, rgba(0,0,0,0.4) 3px 3px 2px;
+}
+
+.noBGBox {
+	margin: 10px 0;
+}
+
+/*  Fix verticla spacing for triple sidebar layout */
+
+.sidebarTriple {
+	margin: 10px 0 20px;
+}
+
+.background-floral-a {
+	background: url(../img/background-floral-a.png) 20px bottom no-repeat;
+}
+
+/*  Elements
+	========================================================================= */
+
+/**************** Scroll to top link */
+
+#toTop {
+	padding: 10px 20px;
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	border:none;
+	z-index: 999;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	-moz-box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	-o-box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	
+	border: #F2ECDA 1px solid;
+	background: #F2ECDA url(../img/bg-contentbox.jpg) left top repeat;
+	color: #4E6678;
+}
+
+#toTop:hover, #toTop:active {
+	background: #4E6678;
+	color: #F2ECDA;
+	border: #F2ECDA 1px solid;
+}
+
+#toTopHover {
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+
+/**************** mobile menu button */
+	
+.navButton:link, .navButton:visited {
+	padding: .3em .5em;
+	text-decoration:none;
+	position:fixed;
+	top:10px;
+	right:10px;
+	overflow:hidden;
+	border:none;
+	z-index: 999;
+	
+	font-size: 1.2em;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	-moz-box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	-o-box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	box-shadow: rgba(0,0,0,.6) 2px 2px 4px;
+	
+	border: #F2ECDA 1px solid;
+	background: #F2ECDA url(../img/bg-contentbox.jpg) left top repeat;
+	color: #4E6678;
+}
+
+.navButton:hover, .navButton:active {
+	background: #4E6678;
+	color: #F2ECDA;
+	border: #F2ECDA 1px solid;
+}	
+	
+/*  Mobile Layouts
+	========================================================================= */
+	
+@media only screen and (max-width: 320px) {
+
+	.wrapper-header {
+		padding-top: 60px;
+	}
+
+}

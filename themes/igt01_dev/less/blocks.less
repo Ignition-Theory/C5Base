@@ -1,0 +1,320 @@
+/* Block Styling 
+   ==========================================================================
+   Styling for generic & custom blocks to make them fit the theme. 
+   Create a template named 'theme' for each block that needs styling.
+   ========================================================================== */
+   
+ 
+ 
+/* 	Basic Navigation (basic_navigation.php)
+	========================================================================= */
+	
+.basic-navigation {
+	text-align: center;
+}
+
+.basic-navigation li {
+	display:inline;
+	text-align: center;
+	margin: 5px 10px;
+}
+
+.navitem a {	
+	display:inline-block;
+		
+	font-size: 1.4em;
+	text-decoration: none;
+	line-height: 1;
+	
+	color: #fff;
+	text-align: center;
+	font-family: "Lobster Two", Georgia, cursive;
+	
+	padding: 5px 15px;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: #4E6678;
+}
+
+.navItem-text {
+	display:inline-block;
+	margin: -6px 0;
+	padding: 0 5px;
+	background: #4E6678;
+}
+
+.navItem-icon {
+	display:inline-block;
+	margin: -6px 0;
+	padding: 0 5px;
+	background: #4E6678;
+}
+
+.navitem a:hover, .navitem a:focus {
+	background: #BEA541;
+}
+
+.navitem a:active {
+	color: #111519;
+}
+
+.navitem a:hover .navItem-text, .navitem a:focus .navItem-text {
+	background: #BEA541;
+}
+
+.navitem a:hover .navItem-icon, .navitem a:focus .navItem-icon {
+	background: #BEA541;
+}
+
+.nav-selected a:link, .nav-selected a:visited {
+	background: #BEA541;
+	text-shadow: rgba(0,0,0,.6) 1px 1px;
+}
+
+.nav-selected .navItem-text, .nav-selected .navItem-icon {
+	background: #BEA541;
+}
+
+/* Progressive enhancement for browsers with BorderImage support */
+
+.borderimage .navitem a {	
+	padding: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: none;
+	
+	border-top-width: 24px;
+	border-right-width: 22px;
+	border-bottom-width: 24px;
+	border-left-width: 22px;
+	-webkit-border-image: url(../img/nav-bg.png) 24 22 24 22 stretch repeat;
+	-moz-border-image: url(../img/nav-bg.png) 24 22 24 22 stretch repeat;
+	-o-border-image: url(../img/nav-bg.png) 24 22 24 22 stretch repeat;
+	border-image: url(../img/nav-bg.png) 24 22 24 22 stretch repeat;
+}
+
+.borderimage  .navitem a:hover, .borderimage  .navitem a:focus {
+	-webkit-border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+	-moz-border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+	-o-border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+	border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+}
+
+.borderimage .navitem .nav-selected {
+	-webkit-border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+	-moz-border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+	-o-border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+	border-image: url(../img/nav-current.png) 24 22 24 22 stretch repeat;
+}
+
+
+/* 	Mobile Navigation (basic_navigation.php)
+	------------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	.navitem a {	
+		display:block;
+		width: 100%;
+		max-width: 250px;
+		
+		float: left;
+			
+		font-size: 1.4em;
+		text-decoration: none;
+		line-height: 1;
+		
+		color: #fff;
+		text-align: center;
+		font-family: "Lobster Two", Georgia, cursive;
+		
+		padding: .5em 1em;
+		margin: 5px 10px;
+		
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+		background: #4E6678;
+		
+		border: #fff 1px solid;
+	}
+
+}
+
+/* Autonav (Sitemap.php)
+	========================================================================= */
+
+/* ------------------------------------------------------------
+	NUMBER OF COLUMNS: Adjust #sitemap li to set the number
+	of columns required in your site map. The default is 
+	4 columns (25%). 5 columns would be 20%, 6 columns would 
+	be 16.6%, etc. 
+------------------------------------------------------------ */
+
+#sitemap li {
+	width:25%;
+}
+
+#sitemap li ul li {
+	width:100% !important;
+}
+
+#sitemap.col1 li { width:99.9%; }
+#sitemap.col2 li { width:50.0%; }
+#sitemap.col3 li { width:33.3%; }
+#sitemap.col4 li { width:25.0%; }
+#sitemap.col5 li { width:20.0%; }
+#sitemap.col6 li { width:16.6%; }
+#sitemap.col7 li { width:14.2%; }
+#sitemap.col8 li { width:12.5%; }
+#sitemap.col9 li { width:11.1%; }
+#sitemap.col10 li { width:10.0%; }
+
+
+/* ------------------------------------------------------------
+	Site Map Styles
+------------------------------------------------------------ */
+
+#sitemap {
+	background: #fff;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px #333 solid;
+}
+
+#sitemap a {
+	text-decoration: none;
+}
+#sitemap ol, #sitemap ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/* --------	Top Level --------- */
+
+#sitemap ul {
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+#sitemap .home {
+	display: block;
+	float: none;
+	background: #ffffff url('../img/slickmap/L1-left.png') center bottom no-repeat;
+	position: relative;
+	z-index: 2;
+	padding: 0 0 30px 0;
+	margin-top: 0;
+}
+#sitemap li {
+	float: left;
+	background: url('../img/slickmap/L1-center.png') center top no-repeat;
+	padding: 30px 0;
+	margin-top: -30px;
+}
+#sitemap li a {
+	margin: 0 20px 0 0;
+	padding: 10px 0;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: black;	
+	background: #c3eafb url('../img/slickmap/white-highlight.png') top left repeat-x;
+	border: 2px solid #b5d9ea;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; 
+	-moz-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; /* FF 3.5+ */	
+}
+#sitemap li a:hover {
+	background-color: #e2f4fd;
+	border-color: #97bdcf;
+}
+#sitemap li:last-child {
+	background: url('../img/slickmap/L1-right.png') center top no-repeat;
+}
+#sitemap a:link:before,
+#sitemap a:visited:before {
+	content: " "attr(href)" ";
+	display: block;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-bottom: 5px;
+	word-wrap: break-word;
+}
+#sitemap li a:link:before,
+#sitemap li a:visited:before {
+	color: #78a9c0;
+}
+
+/* --------	Second Level --------- */
+
+#sitemap li li {
+	width: 100%;
+	clear: left;
+	margin-top: 0;
+	padding: 10px 0 0 0;
+	background: url('../img/slickmap/vertical-line.png') center bottom repeat-y;
+}
+#sitemap li li a {
+	background-color: #cee3ac;
+	border-color: #b8da83;
+}
+#sitemap li li a:hover {
+	border-color: #94b75f;
+	background-color: #e7f1d7;
+}
+#sitemap li li:first-child {
+	padding-top: 30px;
+}
+#sitemap li li:last-child {
+	background: url('../img/slickmap/vertical-line.png') center bottom repeat-y;
+}
+#sitemap li li a:link:before,
+#sitemap li li a:visited:before {
+	color: #8faf5c;
+}
+
+/* --------	Third Level --------- */
+
+#sitemap li li ul {
+	margin: 10px 0 0 0;
+	width: 100%;
+	float: right;
+	padding: 9px 0 10px 0;
+	background: #ffffff url('../img/slickmap/L3-ul-top.png') center top no-repeat;
+}
+#sitemap li li li {
+	background: url('../img/slickmap/L3-center.png') left center no-repeat;
+	padding: 5px 0;
+}
+#sitemap li li li a {
+	background-color: #fff7aa;
+	border-color: #e3ca4b;
+	font-size: 12px;
+	padding: 5px 0;
+	width: 80%;
+	float: right;
+}
+#sitemap li li li a:hover {
+	background-color: #fffce5;
+	border-color: #d1b62c;
+}
+#sitemap li li li:first-child {
+	padding: 15px 0 5px 0;
+	background: url('../img/slickmap/L3-li-top.png') left center no-repeat;
+}
+#sitemap li li li:last-child {
+	background: url('../img/slickmap/L3-bottom.png') left center no-repeat;
+}
+#sitemap li li li a:link:before,
+#sitemap li li li a:visited:before {
+	color: #ccae14;
+	font-size: 9px;
+}

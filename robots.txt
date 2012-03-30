@@ -1,3 +1,6 @@
+# www.robotstxt.org/
+# http://code.google.com/web/controlcrawlindex/
+
 User-agent: *
 Disallow: /blocks 
 Disallow: /concrete 
@@ -17,3 +20,5 @@ Disallow: /single_pages
 Disallow: /themes 
 Disallow: /tools
 Disallow: /updates
+Disallow: /administrator
+Disallow: /backup

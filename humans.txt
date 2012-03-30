@@ -1,0 +1,58 @@
+/* the humans responsible for this site & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Ignition Theory 
+  Site: http://www.ignitiontheory.co.uk
+  Twitter: @igtdesign
+  Location: Dorset, UK
+  
+  Website Design & Front-End Development: Daniel Powell
+  Twitter: @autumnstudios
+  
+  Planning & Project Management: Adam Burden
+  
+  Content Strategy: Daniel Powell
+  
+  Copywriting: Adam Burden
+  
+
+/* THANKS */
+
+  Concrete5: Franz Maruna, Andrew Embler and team
+  Site: http://concrete5.org/
+
+  HTML5 Boilerplate: Paul Irish and team
+  Site: http://html5boilerplate.com
+  
+  JQuery: The jQuery Project
+  Site: http://jquery.org/
+  
+  CSSPIE: Jason Johnston, Sencha inc.
+  Site: http://css3pie.com/
+  
+  Columnal CSS Grid System: Pulp+Pixels  
+  Site: http://www.columnal.com/
+  
+  Less CSS: Alexis Sellier (cloudhead)
+  Site: http://lesscss.org/
+  
+  Twitter Bootstrap: Mark Otto, Fat
+  Site: http://twitter.github.com/bootstrap/
+
+/* SITE */
+
+  Last Source Code Update: 01/2012
+  Launch Date: 01/2012
+  Standards: HTML5, CSS3, PHP 5.3
+  Components: Concrete5, Modernizr, HTML5 Boilerplate, CSSPIE, jQuery, Columnal, Bootstrap
+  Software: Coda, Transmit, Illustrator CS4, GIT, Less
+
+                           
+<!--_                _  __   _                  __   __                             
+   (_)____ _ ____   (_)/ /_ (_)____   ____     / /_ / /_   ___   ____   _____ __  __
+  / // __ `// __ \ / // __// // __ \ / __ \   / __// __ \ / _ \ / __ \ / ___// / / /
+ / // /_/ // / / // // /_ / // /_/ // / / /  / /_ / / / //  __// /_/ // /   / /_/ / 
+/_/ \__, //_/ /_//_/ \__//_/ \____//_/ /_/   \__//_/ /_/ \___/ \____//_/    \__, /  
+   /____/  Web Design by Ignition Theory - http://www.ignitiontheory.co.uk /____/   -->
