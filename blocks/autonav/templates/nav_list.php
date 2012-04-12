@@ -142,10 +142,16 @@ for ($i = 0; $i < $navItemCount; $i++) {
 	} //If loop ends before one of the "if" conditions is hit, then this is the last in its level (and $is_last_in_level stays true)
 	
 	//Custom CSS class
+	
+	
 	$attribute_class = $_c->getAttribute('nav_item_class');
 	$attribute_class = empty($attribute_class) ? '' : $attribute_class;
 	
 	$icon_file = $_c->getCollectionAttributeValue('nav_item_icon');
+	if($icon_file) {
+		$im = Loader::helper('image');
+		$icon_file = $im->getThumbnail($icon_file, 20, 20);
+		}
 	$icon_file = empty($icon_file) ? '' : $icon_file;
 	
 	//Page ID stuff
@@ -256,26 +262,16 @@ foreach ($navItems as $ni) {
 	
 	echo '<li class="' . $ni->listItemClasses . '">'; //opens a nav item
 	
+	// get icon
+	$icon = '';
+	if ($ni->icon) {
+		$icon = '<span class="navItem-icon"><img src="' . $ni->icon->src . '"/></span>';
+	}
+	
 	if ($ni->isEnabled) {
-		echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->anchorClasses . '">';
-		# Get navigation icon from Attribute
-		if ($ni->icon) {
-			$im = Loader::helper('image');
-			echo '<span class="navItem-icon">';
-			$im->output($ni->icon,"Navigation Icon");
-			echo '</span>';
-		}
-		echo $ni->name . '</a>';
+		echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->anchorClasses . '">' . $icon . $ni->name . '</a>';
 	} else {
-		echo '<li class="nav-header">';
-		# Get navigation icon from Attribute
-		if ($ni->icon) {
-			$im = Loader::helper('image');
-			echo '<span class="navItem-icon">';
-			$im->output($ni->icon,"Navigation Icon");
-			echo '</span>';
-		}
-		echo $ni->name . '</li>';
+		echo '<li class="nav-header">' . $icon . $ni->name . '</li>';
 	}
 	
 	echo '</li>'; //closes a nav item

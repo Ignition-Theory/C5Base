@@ -1,6 +1,7 @@
 # Build Script (Customise for each project)
 themes/igt01
 themes/igt01_dev/intermediate
+themes/igt01_dev/less/*.css
 
 # Numerous always-ignore extensions
 *.diff
