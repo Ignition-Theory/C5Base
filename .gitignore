@@ -1,3 +1,7 @@
+# Build Script (Customise for each project)
+themes/igt01
+themes/igt01_dev/intermediate
+
 # Numerous always-ignore extensions
 *.diff
 *.err
