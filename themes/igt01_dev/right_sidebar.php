@@ -2,34 +2,47 @@
 
 <?php $this->inc('elements/html_head.php'); ?>
 
+
+<div class="container">
+
 <?php $this->inc('elements/page_header.php'); ?>
 
-<div class="container wrapper-content">
-	<div class="row">
+
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="main-page">
+				<div class="row-fluid">
+					<div class="span8">
+						<section class="mainBox">
+							<article class="main-article">
+								<?php
+								$a = new Area('Main');
+								$a->setCustomTemplate('content','igt_theme/view.php');
+								$a->setCustomTemplate('image','igt_theme/view.php');
+								$a->display($c);
+								?>
+							</article>
+						</section>
+					</div>
+					
+					<div class="span4">
+						<section class="mainBox">
+							<article class="sidebar">
+								<?php
+								$a = new Area('Sidebar');
+								$a->setCustomTemplate('content','igt_theme/view.php');
+								$a->setCustomTemplate('image','igt_theme/view.php');
+								$a->display($c);
+								?>
+							</article>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div> 
 		
-		<div class="col_8">
-			<section class="contentBox">
-				<article class="main-article">
-					<?php 
-					$a = new Area('Main');
-					$a->display($c);
-					?>
-				</article>
-			</section>
-		</div>
-		
-		<div class="col_4 last">
-			<section class="sidebarBox">
-				<article class="sidebar typo-sidebar">
-					<?php 
-					$a = new Area('Sidebar');
-					$a->display($c);
-					?>
-				</article>
-			</section>
-		</div>
-		
-	</div>
+</div>
+
 </div>
 
 <?php  $this->inc('elements/page_footer.php'); ?>

@@ -1,53 +1,34 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-<div class="container wrapper-header">
-	<div class="row">
-	
-		<header id="site-header" class="clr">
-		
-			<a href="#mobile-navigation" class="scroll navButton mobile-only menu">Menu</a>
-			
-			<div class="site-logo typo-top">
-				<?php 
-				$a = new GlobalArea('Logo');
-				$a->display($c);
-				?>
-			</div>
-			
-			<h1 class="sitename hidden"><?php echo SITE; ?></h1>
-			
-			<div class="site-top typo-top">
-				<?php 
-				$a = new GlobalArea('Top');
-				$a->display($c);
-				?>
-			</div>
-		
-			<div class="wrapper-strapline clr">
-			
-				<div class="site-strapline-left"></div>
-				
-				<div class="site-strapline typo-top">
-					<?php 
-					$a = new GlobalArea('Strapline');
-					$a->display($c);
-					?>
-				</div>
-				
-				<div class="site-strapline-right"></div>
-			
-			</div>
-			
-			<nav class="site-navigation mobile-hide">
-				<?php 
-				$bt = BlockType::getByHandle('autonav');
-				$bt->controller->displayPages = 'top';
-				$bt->controller->orderBy = 'display_asc';
-				$bt->render('templates/basic_navigation');
-				?>
-			</nav>
-			
-		</header>
+<!-- PAGE HEADER
+Contains Navigation, Logo and other header elements. Add structural elements that must appear on every page. Use GlobalArea for block areas.
+Global to site. Each Page Type template includes this and other similar elements.
+================================================================================================= -->
 
+<header class="row">
+	
+	<!-- Area for Site Logo -->
+	<div class="span4 siteLogo">
+		<?php 
+		$a = new GlobalArea('Logo');
+		// Display site title unless block is present
+		$blocks = $a->getAreaBlocksArray($c);
+		echo '<h1 class="siteName';
+		if (!empty($blocks)) : echo ' hidden'; endif;
+		echo '">' . SITE . '</h1>';
+		$a->display($c);
+		?>
+	</div>	
+	
+	<!-- Navigation -->
+	<div class="span8 siteNavigation">
+		<?php 
+		$bt = BlockType::getByHandle('autonav');
+		# $bt->controller->displayPages = 'top';
+		$bt->controller->orderBy = 'display_asc';
+		$bt->render('templates/navbar_static');
+		?>
 	</div>
-</div>
+	
+</header>
+

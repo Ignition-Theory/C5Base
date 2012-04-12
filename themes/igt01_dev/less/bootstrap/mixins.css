@@ -1,0 +1,11 @@
+.clr {
+  *zoom: 1;
+}
+.clr:before,
+.clr:after {
+  display: table;
+  content: "";
+}
+.clr:after {
+  clear: both;
+}

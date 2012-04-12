@@ -1,0 +1,416 @@
+/*  Theme Typography
+	=========================================================================
+	User Editor Typography. Used within the theme for all editable areas
+	Based on the blueprint framework: http://www.blueprintcss.org/
+	========================================================================= */
+/*  Default Typography
+	========================================================================= */
+html {
+  font-size: 100.01%;
+}
+/* Default font settings.
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+body {
+  font-size: 100%;
+  color: #4A2C2D;
+  font-family: 'Georgia', Arial, Helvetica, serif;
+}
+.typography {
+  color: #4A2C2D;
+  line-height: 1.5em;
+}
+/* 	Headings 
+	------------------------------ */
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  color: #4E6678;
+  font-family: "Quattrocento", "times new roman", times, georgia, serif;
+  text-shadow: rgba(255, 255, 255, 0.6) -1px -1px 0, rgba(0, 0, 0, 0.6) 1px 1px 0;
+}
+.typography h1 {
+  font-size: 2.4em;
+  line-height: 1.1;
+  margin-bottom: 0.3em;
+  color: #BEA541;
+  font-family: "Lobster Two", "times new roman", times, georgia, cursive;
+  padding-bottom: 10px;
+  background: url(../img/heading-h1.png) right bottom no-repeat;
+}
+.typography h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  margin-bottom: 0.4em;
+  font-family: "Lobster Two", "times new roman", times, georgia, cursive;
+  padding-bottom: 20px;
+  background-image: url(../img/heading-h2-left.png), url(../img/heading-h2-right.png);
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+.typography h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+.typography h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+.typography h5 {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+.typography h6 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+.typography h1 img,
+.typography h2 img,
+.typography h3 img,
+.typography h4 img,
+.typography h5 img,
+.typography h6 img {
+  margin: 0;
+}
+/* 	Ensure linked headings maintain styling */
+.typography h1 a:link,
+.typography h2 a:link,
+.typography h3 a:link,
+.typography h4 a:link,
+.typography h5 a:link,
+.typography h6 a:link {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  border-bottom: #ccc 1px solid;
+}
+/* 	Text elements
+	------------------------------ */
+.typography p {
+  margin: 0 0 1.5em;
+}
+@media handheld, only screen and (min-width: 767px) {
+  .typography p:last-child {
+    margin: 0;
+  }
+}
+/*	These can be used to pull an image at the start of a paragraph, so that the text flows around it (usage: <p><img class="left">Text</p>) */
+.typography .left {
+  float: left!important;
+}
+.typography p .left {
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+.typography .right {
+  float: right!important;
+}
+.typography p .right {
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+.typography strong,
+dfn {
+  font-weight: bold;
+}
+.typography em,
+dfn {
+  font-style: italic;
+}
+.typography sup,
+sub {
+  line-height: 0;
+}
+.typography abbr,
+.typography acronym {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+}
+.typography address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+.typography pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+.typography pre,
+code,
+tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+/* 	Links
+	------------------------------ */
+.typography a:link,
+.typography a:visited {
+  color: #4E6678;
+  font-weight: 700;
+  text-decoration: underline;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+.typography a:focus,
+.typography a:hover {
+  color: #BEA541;
+  text-decoration: none;
+}
+.typography a:active {
+  color: #4A2C2D;
+  text-decoration: none;
+}
+/* 	Blockquote
+	------------------------------ */
+.typography blockquote {
+  margin: 1.5em;
+  font-style: italic;
+}
+/* 	Nice hanging quotes on fullscreen */
+@media handheld, only screen and (min-width: 767px) {
+  .typography blockquote {
+    margin-left: 4em;
+    position: relative;
+  }
+  .typography blockquote:before {
+    color: #BEA541;
+    display: block;
+    font-family: "Georgia", "Times", serif;
+    font-size: 6em;
+    position: absolute;
+    left: -0.6em;
+    top: 0;
+    width: .6em;
+    line-height: 1em;
+    content: "\201C";
+  }
+}
+/*  Lists
+	---------------------------------- */
+.typography li ul,
+.typography li ol {
+  margin: 0;
+}
+.typography ul {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 0em;
+}
+.typography ul {
+  list-style-type: none;
+}
+.typography ol {
+  list-style-type: decimal;
+}
+.typography dl {
+  margin: 0 0 1.5em;
+}
+.typography dl dt {
+  font-weight: bold;
+}
+.typography dd {
+  margin-left: 1.5em;
+}
+.typography ul li {
+  padding: 0 0 10px 25px;
+  background: url(../img/list-bullet.png) 0 7px no-repeat;
+}
+/*  Tables
+	---------------------------------- */
+/*	Because of the need for padding on TH and TD, the vertical rhythm on table cells has to be 27px, instead of the standard 18px or 36px of other elements. */
+.typography table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+.typography th {
+  font-weight: bold;
+}
+.typography th,
+td,
+caption {
+  padding: 4px 10px 4px 5px;
+}
+/*	You can zebra-stripe your tables in outdated browsers by adding the class "even" to every other table row. */
+.typography tfoot {
+  font-style: italic;
+}
+/*  Custom Classes - used in WYSIWYG Editor for specific effects
+	========================================================================= */
+.typography .hide {
+  display: none;
+}
+.typography .important {
+  font-size: 1.2em;
+  color: #BE5A5B;
+  font-weight: 700;
+}
+/*  Custom Typography Area Types
+	========================================================================= */
+/*  Top Area (.typo-top)
+	---------------------------------- */
+.typo-top,
+.typo-top .typography {
+  color: #D2D3D5;
+  font-family: "Quattrocento", "times new roman", times, georgia, serif;
+  text-shadow: rgba(0, 0, 0, 0.6) 0 0 4px;
+  font-size: .9em;
+}
+.typo-top .typography h1,
+.typo-top .typography h2,
+.typo-top .typography h3,
+.typo-top .typography h4,
+.typo-top .typography h5,
+.typo-top .typography h6 {
+  color: #D2D3D5;
+  font-family: "Quattrocento", "times new roman", times, georgia, serif;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 4px;
+  padding-bottom: 0;
+  background: none;
+}
+.typo-top .typography h1:last-child,
+.typo-top .typography h2:last-child,
+.typo-top .typography h3:last-child,
+.typo-top .typography h4:last-child,
+.typo-top .typography h5:last-child,
+.typo-top .typography h6:last-child {
+  margin: 0;
+}
+.typo-top .typography a:link,
+.typo-top .typography a:visited {
+  color: #D2D3D5;
+  font-weight: normal;
+}
+.typo-top .typography a:focus,
+.typo-top .typography a:hover {
+  color: #4E6678;
+}
+.typo-top img {
+  margin: 5px;
+}
+/*  Sidebar Area (.typo-sidebar)
+	---------------------------------- */
+.typo-sidebar,
+.typo-sidebar .typography {
+  color: #D2D3D5;
+  font-family: "Quattrocento", "times new roman", times, georgia, serif;
+  text-shadow: #000000 0 0 4px;
+}
+.typo-sidebar .typography h1,
+.typo-sidebar .typography h2,
+.typo-sidebar .typography h3,
+.typo-sidebar .typography h4,
+.typo-sidebar .typography h5,
+.typo-sidebar .typography h6 {
+  color: #88B2D1;
+  text-shadow: #000000 0 0 4px;
+}
+.typo-sidebar .typography h1 {
+  color: #BEA541;
+}
+.typo-sidebar .typography h2 {
+  font-family: "Quattrocento", "times new roman", times, georgia, serif;
+  font-size: 1.4em;
+}
+.typo-sidebar .typography a:link,
+.typo-sidebar .typography a:visited {
+  color: #D2D3D5;
+  font-weight: normal;
+}
+.typo-sidebar .typography a:focus,
+.typo-sidebar .typography a:hover {
+  color: #4E6678;
+}
+.typo-sidebar img {
+  margin: 5px;
+}
+/*  Footer Area (.typo-footer)
+	---------------------------------- */
+.typo-footer,
+.typo-footer .typography {
+  color: #4E6678;
+  text-shadow: #000000 1px 1px 0;
+}
+.typo-footer .typography h1,
+.typo-footer .typography h2,
+.typo-footer .typography h3,
+.typo-footer .typography h4,
+.typo-footer .typography h5,
+.typo-footer .typography h6 {
+  color: #4E6678;
+  text-shadow: #000000 1px 1px 1px;
+  padding-bottom: 0;
+  background: none;
+}
+.typo-footer .typography a:link,
+.typo-footer .typography a:visited {
+  color: #4E6678;
+  font-weight: bold;
+}
+.typo-footer .typography a:focus,
+.typo-footer .typography a:hover {
+  color: #D2D3D5;
+}
+/*  Footer Area 2 (.typo-footer-2)
+	---------------------------------- */
+.typo-footer-2,
+.typo-footer-2 .typography {
+  color: #D2D3D5;
+  text-shadow: rgba(0, 0, 0, 0.6) 1px 1px 0;
+}
+.typo-footer-2 .typography h1,
+.typo-footer-2 .typography h2,
+.typo-footer-2 .typography h3,
+.typo-footer-2 .typography h4,
+.typo-footer-2 .typography h5,
+.typo-footer-2 .typography h6 {
+  color: #D2D3D5;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  padding-bottom: 0;
+  background: none;
+}
+.typo-footer-2 .typography a:link,
+.typo-footer-2 .typography a:visited {
+  color: #D2D3D5;
+  font-weight: normal;
+}
+.typo-footer-2 .typography a:focus,
+.typo-footer-2 .typography a:hover {
+  color: #BEA541;
+}
+/*  Responsive Typography
+	========================================================================= */
+/* Smaller screens */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 90%;
+  }
+}
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+  body {
+    font-size: 85%;
+    -webkit-text-size-adjust: none;
+  }
+  .typography h1 {
+    font-size: 2.2em;
+  }
+  .typography h2 {
+    font-size: 1.8em;
+  }
+  .typography h3 {
+    font-size: 1.4em;
+  }
+}
+/* Mobile (low dpi) */
+@media handheld, only screen and (max-width: 239px) {
+  body {
+    font-size: 10px;
+    -webkit-text-size-adjust: none;
+  }
+}

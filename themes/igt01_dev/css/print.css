@@ -2,66 +2,58 @@
    ==========================================================================
    Styles for print
    ========================================================================== */
-   
 /* Hidden Elements - elements not needed when printing
 	========================================================================= */
-	
 header {
-	display: none;
+  display: none;
 }
-
 footer {
-	display: none;
+  display: none;
 }
-
 /* Basic content formatting
    ========================================================================== */
-
 * {
-	background:transparent!important;
-	color:black!important;
-	text-shadow:none!important;
-	filter:none!important;
-	-ms-filter:none!important;
+  background: transparent!important;
+  color: black!important;
+  text-shadow: none!important;
+  filter: none!important;
+  -ms-filter: none!important;
 }
-	
 /* Black prints faster: h5bp.com/s */
-a,a:visited {
-	text-decoration:underline;
+a,
+a:visited {
+  text-decoration: underline;
 }
-
 a[href]:after {
-	content:" (" attr(href) ")";
-	font-size: 0.5em;
+  content: " (" attr(href) ")";
+  font-size: 0.5em;
 }
-
 abbr[title]:after {
-	content:" (" attr(title) ")";
+  content: " (" attr(title) ")";
 }
-
-pre,blockquote {
-	border:1px solid #999;
-	page-break-inside:avoid;
+pre,
+blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
 }
-
 thead {
-	display:table-header-group;
+  display: table-header-group;
 }
-
 /* h5bp.com/t */
-tr,img {
-	page-break-inside:avoid;
-}
-
+tr,
 img {
-	max-width:100%!important;
+  page-break-inside: avoid;
 }
-
-p,h2,h3 {
-	orphans:3;
-	widows:3;
+img {
+  max-width: 100%!important;
 }
-
-h2,h3 {
-	page-break-after:avoid;
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+h2,
+h3 {
+  page-break-after: avoid;
 }

@@ -21,6 +21,18 @@
   }
 }
 
+.clr {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 // Webkit-style focus
 // ------------------
 .tab-focus() {
@@ -208,7 +220,8 @@
   .generate(@gridColumns, @fluidGridColumnWidth, @fluidGridGutterWidth) {      
     // Row surrounds the columns
     .row-fluid {
-      width: 100%;
+      max-width: @fluidMaxWidth;
+      .center-block();
       .clearfix();
 
       // Find all .span# classes within .row and give them the necessary properties for grid columns (supported by all browsers back to IE7, thanks @dhg)

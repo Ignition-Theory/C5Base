@@ -1,7 +1,12 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+<!-- PAGE FOOTER
+Add structural elements that must appear on the bottom of every page. Use GlobalArea for block areas.
+Global to site. Each Page Type template includes this and other similar elements.
+================================================================================================= -->
+
 <footer>
-	<div class="container wrapper-footer"><!-- Start Footer -->
+	<div class="container wrapper-footer">
 		<div class="row">
 		
 			<div class="col_8">

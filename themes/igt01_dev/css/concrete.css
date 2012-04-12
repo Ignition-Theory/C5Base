@@ -1,0 +1,6 @@
+.ccm-global-area {
+  background: #000;
+}
+.ccm-area:hover {
+  box-shadow: #a00 2px 2px 2px !important;
+}

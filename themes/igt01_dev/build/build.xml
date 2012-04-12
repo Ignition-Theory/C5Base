@@ -656,8 +656,7 @@
 
       <echo message="Updating the HTML with the new css filename: ${style.css}"/>
 
-      <replaceregexp match="&lt;link(.+)href=['&quot;]?(.*)/${file.root.stylesheet}(?:\?.*)?['&quot;\s]?(.*/?&gt;)"
-        replace="&lt;link\1href='\2/${css.sha}.css'\3" flags="m">
+      <replaceregexp match="&lt;!-- CSS concatenated [\d\w\s\W]*?!-- end CSS--&gt;" replace="&lt;link rel='stylesheet' href='&lt;?php echo $this-&gt;getThemePath(); ?&gt;/${style.css}'&gt;" flags="m">
           <fileset dir="${dir.intermediate}" includes="${page-files}"/>
       </replaceregexp>
 
