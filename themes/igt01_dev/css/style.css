@@ -6897,6 +6897,87 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   color: #ccae14;
   font-size: 9px;
 }
+/* Image Styling
+   ==========================================================================
+   Styling for generic & custom blocks to make them fit the theme. 
+   Create a template named 'theme' for each block that needs styling.
+   ========================================================================== */
+/* 	Navigation Bar (fixed_navbar.php, static_navbar.php)
+	========================================================================= */
+.image-wrap.embossed {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6), inset 0 -9px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6), inset 0 -9px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6), inset 0 -9px 0 rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.image-wrap.card {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.image-wrap.cut-out {
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.image-wrap.glossy {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.image-wrap.glossy:after {
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+.image-wrap.reflection {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.image-wrap.reflection:after {
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 30px;
+  bottom: -31px;
+  left: 0;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
 .ccm-global-area {
   background: #000;
 }
