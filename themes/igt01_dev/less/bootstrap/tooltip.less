@@ -1,7 +1,7 @@
 // TOOLTIP
 // ------=
 
-.tooltip {
+.tooltips {
   position: absolute;
   z-index: @zindexTooltip;
   display: block;
@@ -14,12 +14,12 @@
   &.right  { margin-left:  2px; }
   &.bottom { margin-top:   2px; }
   &.left   { margin-left: -2px; }
-  &.top .tooltip-arrow    { #popoverArrow > .top(); }
-  &.left .tooltip-arrow   { #popoverArrow > .left(); }
-  &.bottom .tooltip-arrow { #popoverArrow > .bottom(); }
-  &.right .tooltip-arrow  { #popoverArrow > .right(); }
+  &.top .tooltips-arrow    { #popoverArrow > .top(); }
+  &.left .tooltips-arrow   { #popoverArrow > .left(); }
+  &.bottom .tooltips-arrow { #popoverArrow > .bottom(); }
+  &.right .tooltips-arrow  { #popoverArrow > .right(); }
 }
-.tooltip-inner {
+.tooltips-inner {
   max-width: 200px;
   padding: 3px 8px;
   color: @white;
@@ -28,7 +28,7 @@
   background-color: @black;
   .border-radius(4px);
 }
-.tooltip-arrow {
+.tooltips-arrow {
   position: absolute;
   width: 0;
   height: 0;

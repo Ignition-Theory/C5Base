@@ -6,3 +6,6 @@
 
 
 
+/* Enable Tooltips */
+
+// $("[rel=tooltip]").tooltip();
