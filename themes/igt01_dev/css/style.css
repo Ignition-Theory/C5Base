@@ -811,6 +811,9 @@ pre {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 code {
   padding: 3px 4px;
@@ -827,6 +830,9 @@ pre {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -909,6 +915,9 @@ select,
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .uneditable-textarea {
   width: auto;
@@ -943,6 +952,9 @@ input[type="file"] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  -webkit-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -975,6 +987,9 @@ input[type="image"] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  -webkit-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1017,6 +1032,9 @@ textarea {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1025,6 +1043,10 @@ textarea {
   -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
   -o-transition: border linear 0.2s, box-shadow linear 0.2s;
   transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s 1s ease-in-out;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s 1s ease-in-out;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s 1s ease-in-out;
+  transition: border linear 0.2s, box-shadow linear 0.2s 1s ease-in-out;
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
   -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -1037,6 +1059,9 @@ textarea:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -1051,6 +1076,9 @@ select:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  -webkit-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1258,6 +1286,9 @@ textarea[readonly] {
   -webkit-box-shadow: 0 0 6px #dbc59e;
   -moz-box-shadow: 0 0 6px #dbc59e;
   box-shadow: 0 0 6px #dbc59e;
+  -webkit-box-shadow: 0 0 6px #dbc59e 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 6px #dbc59e 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 6px #dbc59e 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 6px #dbc59e;
   -moz-box-shadow: 0 0 6px #dbc59e;
   box-shadow: 0 0 6px #dbc59e;
@@ -1286,6 +1317,9 @@ textarea[readonly] {
   -webkit-box-shadow: 0 0 6px #d59392;
   -moz-box-shadow: 0 0 6px #d59392;
   box-shadow: 0 0 6px #d59392;
+  -webkit-box-shadow: 0 0 6px #d59392 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 6px #d59392 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 6px #d59392 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 6px #d59392;
   -moz-box-shadow: 0 0 6px #d59392;
   box-shadow: 0 0 6px #d59392;
@@ -1314,6 +1348,9 @@ textarea[readonly] {
   -webkit-box-shadow: 0 0 6px #7aba7b;
   -moz-box-shadow: 0 0 6px #7aba7b;
   box-shadow: 0 0 6px #7aba7b;
+  -webkit-box-shadow: 0 0 6px #7aba7b 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 6px #7aba7b 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 6px #7aba7b 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 6px #7aba7b;
   -moz-box-shadow: 0 0 6px #7aba7b;
   box-shadow: 0 0 6px #7aba7b;
@@ -1337,6 +1374,9 @@ select:focus:required:invalid:focus {
   -webkit-box-shadow: 0 0 6px #f8b9b7;
   -moz-box-shadow: 0 0 6px #f8b9b7;
   box-shadow: 0 0 6px #f8b9b7;
+  -webkit-box-shadow: 0 0 6px #f8b9b7 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 6px #f8b9b7 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 6px #f8b9b7 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 6px #f8b9b7;
   -moz-box-shadow: 0 0 6px #f8b9b7;
   box-shadow: 0 0 6px #f8b9b7;
@@ -1355,6 +1395,9 @@ select:focus:required:invalid:focus {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
@@ -1429,6 +1472,9 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
 }
 .input-prepend input:focus,
 .input-append input:focus,
@@ -1463,6 +1509,9 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
 .input-prepend .active,
 .input-append .active {
@@ -1483,6 +1532,9 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
 .input-append .uneditable-input {
   border-right-color: #ccc;
@@ -1490,6 +1542,9 @@ select:focus:required:invalid:focus {
 .input-append .add-on {
   margin-right: 0;
   margin-left: -1px;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
@@ -1507,6 +1562,9 @@ select:focus:required:invalid:focus {
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: 0;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   border-radius: 14px;
@@ -1630,6 +1688,9 @@ table {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 .table-bordered th + th,
 .table-bordered td + td,
@@ -1650,9 +1711,15 @@ table {
   -webkit-border-radius: 4px 0 0 0;
   -moz-border-radius: 4px 0 0 0;
   border-radius: 4px 0 0 0;
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
 }
 .table-bordered thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
   -webkit-border-radius: 0 4px 0 0;
   -moz-border-radius: 0 4px 0 0;
   border-radius: 0 4px 0 0;
@@ -1668,9 +1735,15 @@ table {
   -webkit-border-radius: 0 0 0 4px;
   -moz-border-radius: 0 0 0 4px;
   border-radius: 0 0 0 4px;
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
 }
 .table-bordered thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-radius: 0 0 4px 0;
+  -moz-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px 0;
   -webkit-border-radius: 0 0 4px 0;
   -moz-border-radius: 0 0 4px 0;
   border-radius: 0 0 4px 0;
@@ -2183,9 +2256,15 @@ table .span12 {
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2244,6 +2323,9 @@ table .span12 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 .well {
   min-height: 20px;
@@ -2258,9 +2340,15 @@ table .span12 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -2275,6 +2363,10 @@ table .span12 {
   -ms-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
+  -webkit-transition: opacity 0.15s linear 1s ease-in-out;
+  -moz-transition: opacity 0.15s linear 1s ease-in-out;
+  -o-transition: opacity 0.15s linear 1s ease-in-out;
+  transition: opacity 0.15s linear 1s ease-in-out;
   -webkit-transition: opacity 0.15s linear;
   -moz-transition: opacity 0.15s linear;
   -ms-transition: opacity 0.15s linear;
@@ -2291,6 +2383,10 @@ table .span12 {
   -ms-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease;
+  -webkit-transition: height 0.35s ease 1s ease-in-out;
+  -moz-transition: height 0.35s ease 1s ease-in-out;
+  -o-transition: height 0.35s ease 1s ease-in-out;
+  transition: height 0.35s ease 1s ease-in-out;
   -webkit-transition: height 0.35s ease;
   -moz-transition: height 0.35s ease;
   -ms-transition: height 0.35s ease;
@@ -2358,9 +2454,15 @@ table .span12 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2384,6 +2486,10 @@ table .span12 {
   -ms-transition: background-position 0.1s linear;
   -o-transition: background-position 0.1s linear;
   transition: background-position 0.1s linear;
+  -webkit-transition: background-position 0.1s linear 1s ease-in-out;
+  -moz-transition: background-position 0.1s linear 1s ease-in-out;
+  -o-transition: background-position 0.1s linear 1s ease-in-out;
+  transition: background-position 0.1s linear 1s ease-in-out;
   -webkit-transition: background-position 0.1s linear;
   -moz-transition: background-position 0.1s linear;
   -ms-transition: background-position 0.1s linear;
@@ -2404,6 +2510,9 @@ table .span12 {
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2424,6 +2533,9 @@ table .span12 {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  -webkit-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2432,6 +2544,9 @@ table .span12 {
   padding: 9px 14px;
   font-size: 18px;
   line-height: normal;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3087,6 +3202,9 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .btn-group .btn:first-child {
   margin-left: 0;
@@ -3140,6 +3258,9 @@ input[type="submit"].btn.small {
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -3158,12 +3279,18 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .btn-group.open .dropdown-toggle {
   background-image: none;
   -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -3198,6 +3325,9 @@ input[type="submit"].btn.small {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3350,6 +3480,9 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #dddddd;
@@ -3367,6 +3500,9 @@ input[type="submit"].btn.small {
   padding-bottom: 8px;
   margin-top: 2px;
   margin-bottom: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -3396,6 +3532,9 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .nav-tabs.nav-stacked > li:first-child > a {
   -webkit-border-radius: 4px 4px 0 0;
@@ -3404,8 +3543,14 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 .nav-tabs.nav-stacked > li:last-child > a {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
@@ -3429,6 +3574,9 @@ input[type="submit"].btn.small {
   border-width: 1px;
 }
 .nav-pills .dropdown-menu {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3519,6 +3667,9 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 .tabs-below .nav-tabs > li > a:hover {
   border-bottom-color: transparent;
@@ -3551,6 +3702,9 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 4px 0 0 4px;
   -moz-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 .tabs-left .nav-tabs > li > a:hover {
   border-color: #eeeeee #dddddd #eeeeee #eeeeee;
@@ -3567,6 +3721,9 @@ input[type="submit"].btn.small {
 }
 .tabs-right .nav-tabs > li > a {
   margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
@@ -3613,9 +3770,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -3714,6 +3877,9 @@ input[type="submit"].btn.small {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
@@ -3754,9 +3920,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -3864,6 +4036,9 @@ input[type="submit"].btn.small {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
@@ -3872,6 +4047,10 @@ input[type="submit"].btn.small {
   -ms-transition: none;
   -o-transition: none;
   transition: none;
+  -webkit-transition: none 1s ease-in-out;
+  -moz-transition: none 1s ease-in-out;
+  -o-transition: none 1s ease-in-out;
+  transition: none 1s ease-in-out;
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -3905,6 +4084,9 @@ input[type="submit"].btn.small {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
@@ -3920,6 +4102,9 @@ input[type="submit"].btn.small {
 .navbar-fixed-top .navbar-inner {
   padding-left: 0;
   padding-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -3975,6 +4160,9 @@ input[type="submit"].btn.small {
 }
 .navbar .dropdown-menu {
   margin-top: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4061,9 +4249,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: inset 0 1px 0 #ffffff;
   -moz-box-shadow: inset 0 1px 0 #ffffff;
   box-shadow: inset 0 1px 0 #ffffff;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 0 #ffffff 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 0 #ffffff 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 0 #ffffff;
   -moz-box-shadow: inset 0 1px 0 #ffffff;
   box-shadow: inset 0 1px 0 #ffffff;
@@ -4101,9 +4295,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -4141,8 +4341,14 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
 .pagination li:last-child a {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
@@ -4188,6 +4394,9 @@ input[type="submit"].btn.small {
   padding: 5px 14px;
   background-color: #fff;
   border: 1px solid #ddd;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -4257,9 +4466,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -4276,6 +4491,10 @@ input[type="submit"].btn.small {
   -ms-transition: opacity .3s linear, top .3s ease-out;
   -o-transition: opacity .3s linear, top .3s ease-out;
   transition: opacity .3s linear, top .3s ease-out;
+  -webkit-transition: opacity .3s linear, top .3s ease-out 1s ease-in-out;
+  -moz-transition: opacity .3s linear, top .3s ease-out 1s ease-in-out;
+  -o-transition: opacity .3s linear, top .3s ease-out 1s ease-in-out;
+  transition: opacity .3s linear, top .3s ease-out 1s ease-in-out;
   -webkit-transition: opacity .3s linear, top .3s ease-out;
   -moz-transition: opacity .3s linear, top .3s ease-out;
   -ms-transition: opacity .3s linear, top .3s ease-out;
@@ -4307,9 +4526,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
   -webkit-box-shadow: inset 0 1px 0 #ffffff;
   -moz-box-shadow: inset 0 1px 0 #ffffff;
   box-shadow: inset 0 1px 0 #ffffff;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 0 #ffffff 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 0 #ffffff 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 0 #ffffff;
   -moz-box-shadow: inset 0 1px 0 #ffffff;
   box-shadow: inset 0 1px 0 #ffffff;
@@ -4436,6 +4661,9 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 .tooltip-arrow {
   position: absolute;
@@ -4535,9 +4763,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -4553,10 +4787,16 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 .popover-content {
   padding: 14px;
   background-color: #ffffff;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
@@ -4612,9 +4852,15 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -4624,6 +4870,9 @@ a.thumbnail:hover {
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -4644,6 +4893,9 @@ a.thumbnail:hover {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #999999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -4712,9 +4964,15 @@ a.thumbnail:hover {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4750,6 +5008,9 @@ a.thumbnail:hover {
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15) 2px 5px 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -4764,6 +5025,10 @@ a.thumbnail:hover {
   -ms-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
+  -webkit-transition: width 0.6s ease 1s ease-in-out;
+  -moz-transition: width 0.6s ease 1s ease-in-out;
+  -o-transition: width 0.6s ease 1s ease-in-out;
+  transition: width 0.6s ease 1s ease-in-out;
   -webkit-transition: width 0.6s ease;
   -moz-transition: width 0.6s ease;
   -ms-transition: width 0.6s ease;
@@ -4919,6 +5184,9 @@ a.thumbnail:hover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 .accordion-heading {
   border-bottom: 0;
@@ -4949,6 +5217,10 @@ a.thumbnail:hover {
   -ms-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
+  -webkit-transition: 0.6s ease-in-out left 1s ease-in-out;
+  -moz-transition: 0.6s ease-in-out left 1s ease-in-out;
+  -o-transition: 0.6s ease-in-out left 1s ease-in-out;
+  transition: 0.6s ease-in-out left 1s ease-in-out;
   -webkit-transition: 0.6s ease-in-out left;
   -moz-transition: 0.6s ease-in-out left;
   -ms-transition: 0.6s ease-in-out left;
@@ -5009,6 +5281,9 @@ a.thumbnail:hover {
   -webkit-border-radius: 23px;
   -moz-border-radius: 23px;
   border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
   opacity: 0.5;
   filter: alpha(opacity=50);
   opacity: 0.5;
@@ -5049,6 +5324,9 @@ a.thumbnail:hover {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 .hero-unit h1 {
   margin-bottom: 0;
@@ -5076,6 +5354,8 @@ a.thumbnail:hover {
 .invisible {
   visibility: hidden;
 }
+/* 	CSS Vendor Prefix Mixins
+	========================================================================= */
 /*!
  * Bootstrap Responsive v2.0.0
  *
@@ -5795,6 +6075,9 @@ a.thumbnail:hover {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
   }
   .navbar .dropdown-menu li + li a {
     margin-bottom: 2px;
@@ -5820,9 +6103,15 @@ a.thumbnail:hover {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    -webkit-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: none 2px 5px 0 rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -5844,6 +6133,9 @@ a.thumbnail:hover {
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1) 2px 5px 0 rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -6454,6 +6746,12 @@ body {
   border-radius: 15px;
   box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
 }
+.mainBox2 {
+  background: #424252;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
+}
 /*  Elements
 	========================================================================= */
 /**************** Scroll to top link */
@@ -6897,86 +7195,218 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   color: #ccae14;
   font-size: 9px;
 }
-/* Image Styling
-   ==========================================================================
-   Styling for generic & custom blocks to make them fit the theme. 
-   Create a template named 'theme' for each block that needs styling.
-   ========================================================================== */
-/* 	Navigation Bar (fixed_navbar.php, static_navbar.php)
+/* 	Image Styling
+  	==========================================================================
+	A collection of effects rendered on top of images.
+	========================================================================== */
+/* 	Variables & Mixins (Edit Away!)
 	========================================================================= */
-.image-wrap.embossed {
-  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6), inset 0 -9px 0 rgba(255, 255, 255, 0.3);
-  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6), inset 0 -9px 0 rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6), inset 0 -9px 0 rgba(255, 255, 255, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+.card-shadow {
+  -webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
-.image-wrap.card {
-  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+.cutout-shadow {
+  -webkit-box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+  -moz-box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+  box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
 }
-.image-wrap.cut-out {
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 4px 5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(0, 0, 0, 0.6);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+.embossed-shadow {
+  -webkit-box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.3), inset -10px -10px 10px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.3), inset -10px -10px 10px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.3), inset -10px -10px 10px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
-.image-wrap.glossy {
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+/* 	Basic Styles
+	========================================================================= */
+.image-effect {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: bottom;
 }
-.image-wrap.glossy:after {
-  position: absolute;
+/* image-wrap:after pseudo element (overlaying container) */
+.image-effect:after {
   content: ' ';
   width: 100%;
-  height: 50%;
+  height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 0.1)));
-  background: linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
-.image-wrap.reflection {
-  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+.image-effect img {
+  vertical-align: bottom;
 }
-.image-wrap.reflection:after {
+/*	Individual Styles
+	========================================================================= */
+/* Rounded Card */
+.image-effect.roundcard:after {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.image-effect.roundcard img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Rounded Cutout */
+.image-effect.roundcutout:after {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+  -moz-box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+  box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+}
+.image-effect.roundcutout img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Rounded Glossy */
+.image-effect.roundglossy:after {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.image-effect.roundglossy:before {
   position: absolute;
   content: ' ';
   width: 100%;
-  height: 30px;
-  bottom: -31px;
+  height: 35%;
+  top: 0;
   left: 0;
-  -webkit-border-top-left-radius: 20px;
-  -webkit-border-top-right-radius: 20px;
-  -moz-border-radius-topleft: 20px;
-  -moz-border-radius-topright: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.15) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(255, 255, 255, 0.15)));
+  background: linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.15) 100%);
+}
+.image-effect.roundglossy img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Rounded Embossed */
+.image-effect.roundembossed:after {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.3), inset -10px -10px 10px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.3), inset -10px -10px 10px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 0.3), inset -10px -10px 10px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.image-effect.roundembossed img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Rounded Border */
+.image-effect.roundborder:after {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.image-effect.roundborder img {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 5px #111111 solid;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+/* Card */
+.image-effect.card:after {
+  -webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), inset -1px -1px 0px rgba(0, 0, 0, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+/* Cutout */
+.image-effect.cutout:after {
+  -webkit-box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+  -moz-box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+  box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.4), inset 1px 1px 1px rgba(0, 0, 0, 0.4), inset 0 0 15px #000000;
+}
+/* Circlular*/
+.image-effect.circular:after {
+  border-radius: 50%;
+}
+.image-effect.circular img {
+  border-radius: 50%;
 }
 .ccm-global-area {
   background: #000;
