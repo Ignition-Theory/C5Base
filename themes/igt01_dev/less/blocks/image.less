@@ -59,6 +59,19 @@
 	vertical-align: bottom;
 }
 
+.image-effect-link .image-effect:before {
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.image-effect-link:hover .image-effect:before {
+	.border-radius(@ieffect-corners);
+	background: rgba(0,0,0,0.3);
+}
 
 /*	Individual Styles
 	========================================================================= */
@@ -93,16 +106,10 @@
 }
 
 .image-effect.roundglossy:before {
-	position: absolute;
-	content: ' ';
-	width: 100%;
-	height: 35%;
-	top: 0;
-	left: 0;
 	.border-radius(@ieffect-corners);
-	background: -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,.15) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,.15)));
-	background: linear-gradient(top, rgba(255,255,255,0.6) 0%,rgba(255,255,255,.15) 100%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,.15) 35%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.6)), color-stop(35%,rgba(255,255,255,.15)));
+	background: linear-gradient(top, rgba(255,255,255,0.6) 0%,rgba(255,255,255,.15) 35%);
 }
 
 .image-effect.roundglossy img {
