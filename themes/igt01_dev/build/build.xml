@@ -476,6 +476,9 @@
               <exclude name="${file.manifest}"/>
           </fileset>
       </copy>
+      <!-- copy & rename the theme description file for production -->
+      <copy file="${dir.source}/description_production.txt" tofile="${dir.publish}/description.txt" />
+      <copy file="${dir.source}/thumbnail_production.png" tofile="${dir.publish}/thumbnail.png" />
 
       <echo message="A copy of all new non-dev files are now in: ./${dir.publish}."/>
   </target>

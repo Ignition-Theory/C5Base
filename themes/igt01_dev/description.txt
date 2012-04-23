@@ -1,2 +1,2 @@
-Custom Theme IGT00 (Development)
-Custom Concrete5 theme specially built by Ignition Theory. For help and support, please visit http://help/ignitontheory.co.uk.
+Custom Theme IGT01 (Development)
+A Concrete5 theme crafted by Ignition Theory. This copy is for development purposes only and is not suitable for use on a live production site. Use a LESS compiler and then the ant build script included in the source files to produce a production ready version. http://ignitiontheory.co.uk
