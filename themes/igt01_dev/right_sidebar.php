@@ -26,7 +26,7 @@
 					</div>
 					
 					<div class="span4">
-						<section class="mainBox">
+						<section class="mainBox2">
 							<article class="sidebar">
 								<?php
 								$a = new Area('Sidebar');

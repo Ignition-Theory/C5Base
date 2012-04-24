@@ -23,12 +23,12 @@ Global to site. Each Page Type template includes this and other similar elements
 
 	<!-- CSS: implied media=all -->
 	<!-- CSS concatenated and minified via ant build script-->
-	<link rel="stylesheet/less" href="<?php echo $this->getThemePath(); ?>/less/style.less">
+	<link rel="stylesheet/less" href="<?php echo $this->getThemePath(); ?>/less/styles.less">
 	<!-- end CSS-->	
 	
 	<!-- Customize stylesheet contains colours and fonts that can be changed by the CMS -->
 	<!-- Remove this line if no customisation is offered -->
-	<link rel="stylesheet" href="<?php echo $this->getStyleSheet('css/custom.css'); ?>">
+	<link rel="stylesheet" href="<?php echo $this->getStyleSheet('css/configurable_styles.css'); ?>">
 
 	<!-- All JavaScript at the bottom, except for Modernizr / Respond.
     Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries

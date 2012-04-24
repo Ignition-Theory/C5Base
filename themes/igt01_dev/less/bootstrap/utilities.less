@@ -21,3 +21,30 @@
 .invisible {
   visibility: hidden;
 }
+
+
+
+/* 	CSS Vendor Prefix Mixins
+	========================================================================= */
+
+// Border Radius
+.border-radius( @radius: 10px ) {  
+  -webkit-border-radius: @radius;  
+  -moz-border-radius: @radius;  
+  border-radius: @radius;  
+} 
+
+// Box Shadow
+.box-shadow(@x : 2px, @y : 2px, @blur : 5px, @spread : 0, @color : rgba(0,0,0,.6)) {  
+    -webkit-box-shadow: @x @y @blur @spread @color;  
+       -moz-box-shadow: @x @y @blur @spread @color;  
+            box-shadow: @x @y @blur @spread @color;  
+}  
+
+// Transition
+.transition(@what : all, @length : 1s, @easing : ease-in-out) {  
+    -webkit-transition: @what @length @easing;  
+       -moz-transition: @what @length @easing;  
+         -o-transition: @what @length @easing;  
+            transition: @what @length @easing;  
+}
