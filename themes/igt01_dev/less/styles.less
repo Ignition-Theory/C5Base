@@ -1,6 +1,43 @@
-/* ==== styles.less ====
-   Main 
-   ========================================================================== */
+
+/*	******** styles.less ********
+	Contains @imports for all LESS files.
+	************************************************************************* */
+
+/* SOME NOTES ON THE CSS
+*
+*	This file is the core LESS file. It references all other LESS files via @import 
+*	
+*	Development Theme
+*	LESS.js is used to compile LESS client side. Great during development, bad for live sites.
+
+*	Production Theme (use Build script)
+*	This LESS file is pre-compiled using a local App and moved to the CSS folder. 
+*	LESS.app is recommended - http://incident57.com/less/ (set to compile /less/styles.less in to adjacent /CSS/ folder.)
+*	The theme will reference the new single CSS file after compilation via the build script.
+
+*	**** CSS Style Guide ****
+*	The following are guidelines on how to write CSS to match with the rest of the code in this Theme.
+*	Following this guide allows code to remain consistent and easy to read. 
+
+*	CSS should be multiline and follow the below example format.
+
+*	camelCaseElementName {
+*		1: size & display type
+*		2: layout & positioning controls (padding, width etc.)
+*		2: visual stuff (colors, fonts, backgrounds)
+*		3: CSS3 effects (split apart with a line between each if using vendor prefixes)
+*	}
+*/
+
+
+/*  ====== Frameworks ======
+	Third-party frameworks upon which the theme is based
+	========================================================================= */
+
+
+/*  ---- Twitter Bootstrap ----
+	Lightly modified Bootstrap Framework files. Some bits removed for simplicity.
+	--------------------------------------------------------------------------*/
 
 /*!
  * Bootstrap v2.0.0
@@ -10,89 +47,88 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * http://twitter.github.com/framework/
  */
 
+
 // CSS Reset
-@import "bootstrap/reset.less";
+@import "framework/reset.less";
 
 // Core variables and mixins
 @import "theme/variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "theme/mixins.less";
+@import "framework/mixins.less";
 
 // Grid system and page structure
-@import "bootstrap/scaffolding.less";
-@import "bootstrap/grid.less";
-@import "bootstrap/layouts.less";
+@import "framework/scaffolding.less";
+@import "framework/grid.less";
+@import "framework/layouts.less";
 
 // Base CSS
-@import "bootstrap/type.less";
-@import "bootstrap/code.less";
-@import "bootstrap/forms.less";
-@import "bootstrap/tables.less";
+@import "framework/type.less";
+@import "framework/code.less";
+@import "framework/forms.less";
+@import "framework/tables.less";
 
 // Components: common
-@import "bootstrap/sprites.less";
-@import "bootstrap/dropdowns.less";
-@import "bootstrap/wells.less";
-@import "bootstrap/component-animations.less";
-@import "bootstrap/close.less";
+@import "framework/dropdowns.less";
+@import "framework/component-animations.less";
+@import "framework/close.less";
 
 // Components: Buttons & Alerts
-@import "bootstrap/buttons.less";
-@import "bootstrap/button-groups.less";
-@import "bootstrap/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+@import "framework/buttons.less";
+@import "framework/button-groups.less";
+@import "framework/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
 // Components: Nav
-@import "bootstrap/navs.less";
-@import "bootstrap/navbar.less";
-@import "bootstrap/breadcrumbs.less";
-@import "bootstrap/pagination.less";
-@import "bootstrap/pager.less";
+@import "framework/navs.less";
+@import "framework/navbar.less";
+@import "framework/breadcrumbs.less";
+@import "framework/pagination.less";
+@import "framework/pager.less";
 
 // Components: Popovers
-@import "bootstrap/modals.less";
-@import "bootstrap/tooltip.less";
-@import "bootstrap/popovers.less";
+@import "framework/modals.less";
+@import "framework/tooltip.less";
+@import "framework/popovers.less";
 
 // Components: Misc
-@import "bootstrap/thumbnails.less";
-@import "bootstrap/labels.less";
-@import "bootstrap/progress-bars.less";
-@import "bootstrap/accordion.less";
-@import "bootstrap/carousel.less";
-@import "bootstrap/hero-unit.less";
+@import "framework/labels.less";
+@import "framework/progress-bars.less";
+@import "framework/accordion.less";
+@import "framework/carousel.less";
 
 // Utility classes
-@import "bootstrap/print.less" print;
-@import "bootstrap/utilities.less"; // Has to be last to override when necessary
+@import "framework/print.less" print;
+@import "framework/utilities.less"; // Has to be last to override when necessary
 
 // Responsiveness
-@import "bootstrap/responsive.less";
+@import "framework/responsive.less";
 
 
-
-/*!
- * Bootstrap v2.0.0
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
+/*  ---- Slickmap ----
+	For pretty site maps http://astuteo.com/slickmap
+	--------------------------------------------------------------------------*/
+	
+@import "framework/slickmap.less";
 
 
-
-// Blocks
+/*  ====== Block Styling ======
+	Styling for each Block type is integrated in to Theme to reduce HTTP requests.
+	Often uses frameworks shown above.
+	========================================================================= */
+	
 @import "blocks/autonav.less";
 @import "blocks/image.less";
 @import "blocks/form.less";
 
-// Utilities
-@import "theme/concrete5.less";
 
-// Theme
-@import "theme/page.less";
-@import "theme/areas.less";
-@import "theme/iefixes.less";
-@import "theme/print.less" print;
+/*  ====== Theme Styling ======
+	The stylesheets used to make a unique Theme
+	========================================================================= */
+	
+@import "theme/page.less"; // Layouts for header, footer and Page Types
+@import "theme/areas.less"; // Defines visual design for content areas. Used on page types and manually assigned within CMS
+@import "theme/navigation.less"; // Styles the main navigation block
+@import "theme/iefixes.less"; // Overrides for IE and other troublesome browsers
+@import "theme/print.less" print; // styles for printing web pages. Use in combination with print.less from bootstrap
+@import "theme/concrete5.less"; // Minor customisation for C5 interface to match theme
