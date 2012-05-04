@@ -150,13 +150,15 @@ jQuery("#miniSurveyView<?php  echo $bID; ?>").validationEngine();
 
 	<?php  if ($success): ?>
 		
-		<div class="success">
+		<div class="alert alert-block alert-success fade in">
+			<button class="close" data-dismiss="alert">×</button>
 			<?php  echo $thanksMsg; ?>
 		</div>
 	
 	<?php  elseif ($errors): ?>
 
-		<div class="errors">
+		<div class="alert alert-block alert-error fade in">
+			<button class="close" data-dismiss="alert">×</button>
 			<?php  echo $errorHeader; ?>
 			<?php  echo $errorDivs; /* each error wrapped in <div class="error">...</div> */ ?>
 		</div>
