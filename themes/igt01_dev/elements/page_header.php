@@ -5,7 +5,7 @@ Contains Navigation, Logo and other header elements. Add structural elements tha
 Global to site. Each Page Type template includes this and other similar elements.
 ================================================================================================= -->
 
-<header class="row">
+<header class="row-fluid pageHeader">
 	
 	<!-- Area for Site Logo -->
 	<div class="span4 siteLogo">
@@ -24,9 +24,11 @@ Global to site. Each Page Type template includes this and other similar elements
 	<div class="span8 siteNavigation">
 		<?php 
 		$bt = BlockType::getByHandle('autonav');
-		# $bt->controller->displayPages = 'top';
+		$bt->controller->displayPages = 'all';
+		$bt->controller->displaySubPages = 'all';
+		$bt->controller->displaySubPageLevels = 'all';
 		$bt->controller->orderBy = 'display_asc';
-		$bt->render('templates/navbar_static');
+		$bt->render('templates/IGT_theme_main');
 		?>
 	</div>
 	

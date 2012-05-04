@@ -246,7 +246,7 @@ $cp = new Permissions($c);
 if (isset($cp)) { if ($cp->canWrite() || $cp->canAddSubContent() || $cp->canAdminPage() || $cp->canApproveCollection()) {
   	$editbarfix='';
   } else {
-  	echo('<div style="min-height: 40px"></div>');
+  	echo('<div style="height: 40px"></div>');
   	$editbarfix=' navbar-fixed-top';
   }
 } 

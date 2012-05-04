@@ -1,4 +1,4 @@
-<?php
+<?php defined('C5_EXECUTE') or die("Access Denied.");
 
 /* 	NAV LIST
    	==========================================================================
@@ -33,7 +33,6 @@
 /*************************************************
  * DESIGNERS: SCROLL DOWN! (IGNORE ALL THIS STUFF)
  *************************************************/
-defined('C5_EXECUTE') or die("Access Denied.");
 
 $c = Page::getCurrentPage();
 

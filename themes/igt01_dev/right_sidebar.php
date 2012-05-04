@@ -2,16 +2,15 @@
 
 <?php $this->inc('elements/html_head.php'); ?>
 
-
-<div class="container">
+<div class="container pageWrapper">
 
 <?php $this->inc('elements/page_header.php'); ?>
 
-
 	<div class="row-fluid">
 		<div class="span12">
-			<div class="main-page">
+			<div class="mainContent">
 				<div class="row-fluid">
+				
 					<div class="span8">
 						<section class="mainBox">
 							<article class="main-article">
@@ -37,14 +36,15 @@
 							</article>
 						</section>
 					</div>
+					
 				</div>
 			</div>
-		</div> 
-		
-</div>
+		</div> 	
+	</div>
 
-</div>
+<?php  $this->inc('elements/page_footer.php'); ?>	
+	
+</div><!-- end pageWrapper -->
 
-<?php  $this->inc('elements/page_footer.php'); ?>
 
 <?php  $this->inc('elements/html_foot.php'); ?>

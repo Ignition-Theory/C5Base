@@ -45,22 +45,3 @@ Global to site. Each Page Type template includes this and other similar elements
 		</div>
 	</div>
 </footer>
-
-<nav id="mobile_nav" class="site-navigation-mobile mobile-only">
-
-	<a name="mobile-navigation" id="mobile-navigation"></a>
-
-	<?php 
-	$bt = BlockType::getByHandle('autonav');
-	$bt->controller->displayPages = 'all';
-	$bt->controller->orderBy = 'display_asc';
-	$bt->render('templates/basic_navigation');
-	?>
-	
-	<span class="typo-footer-2">
-		<?php 
-		$a = new GlobalArea('Footer C');
-		$a->display($c);
-		?>
-	</span>
-</nav>
