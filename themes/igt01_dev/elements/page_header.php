@@ -28,7 +28,7 @@ Global to site. Each Page Type template includes this and other similar elements
 		$bt->controller->displaySubPages = 'all';
 		$bt->controller->displaySubPageLevels = 'all';
 		$bt->controller->orderBy = 'display_asc';
-		$bt->render('templates/IGT_theme_main');
+		$bt->render('templates/igt_main');
 		?>
 	</div>
 	

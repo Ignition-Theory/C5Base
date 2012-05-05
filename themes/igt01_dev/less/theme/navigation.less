@@ -1,27 +1,24 @@
-/*  ---- Main Navigation ----
-	The main navigation for the site
-	--------------------------------------------------------------------------*/
+	
+/*	******** Main Navigation  ********
+	The main navigation for the site. Styled to fit theme.
+	************************************************************************* */
+	
+	
+/*  ====== Basic Styling ======
+	Third-party frameworks upon which the theme is based
+	========================================================================= */
 
 // wrap the navigation in a nice box
-.nav-wrapper {
+.nav-mainWrapper {
 	padding: 10px;
 	.clearfix();
 	
-	background: rgb(230,219,207); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(230,219,207,1) 0%, rgba(230,196,156,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,219,207,1)), color-stop(100%,rgba(230,196,156,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(230,219,207,1) 0%,rgba(230,196,156,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(230,219,207,1) 0%,rgba(230,196,156,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(230,219,207,1) 0%,rgba(230,196,156,1) 100%); /* IE10+ */
-	background: linear-gradient(top,  rgba(230,219,207,1) 0%,rgba(230,196,156,1) 100%); /* W3C */
+	#gradient > .vertical(rgba(230,219,207,1),rgba(230,196,156,1));
 	
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	.border-radius(15px);
 	
-	-webkit-box-shadow: rgba(255,255,255,0.9) 1px 1px 1px inset, rgba(0,0,0,0.4) -1px -1px 1px inset;
-	-moz-box-shadow: rgba(255,255,255,0.9) 1px 1px 1px inset, rgba(0,0,0,0.4) -1px -1px 1px inset;
-	box-shadow: rgba(255,255,255,0.9) 1px 1px 1px inset, rgba(0,0,0,0.4) -1px -1px 1px inset;
+	@shadow: rgba(255,255,255,0.9) 1px 1px 1px inset, rgba(0,0,0,0.4) -1px -1px 1px inset;
+	.box-shadow(@shadow);
 }
 
 // Reset list styles
@@ -33,26 +30,17 @@
 	.clearfix();
 }
 
-// Make links block level
-.nav-main > li > a {
-	display: block;
-  	padding: 10px;
-  	color: #855730;
-  	text-align: center;
+
+/*  ====== Default Menu Items ======
+	========================================================================= */
 	
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-/*  -- Style Menu Items --	*/
-
 // Floats for horizontal nav
 .nav-main > li {
 	float: left;
 	text-align: center;
 }
 
+// Arrange items in responsive columns
 .nav-main.nav-col1 > li { width: 100% }
 .nav-main.nav-col2 > li { width: 50% }
 .nav-main.nav-col3 > li { width: 33.3% }
@@ -64,19 +52,27 @@
 .nav-main.nav-col9 > li { width: 11.1% }
 .nav-main.nav-col10 > li { width: 10% }
 
+
 .nav-main > li.first,
 .nav-main > li.last {
 	padding-left: 0;
 	margin-right: 0;
 }
 
-
+// Make links block level
+.nav-main > li > a {
+	display: block;
+  	padding: 10px;
+  	color: #855730;
+  	text-align: center;
+	
+	.border-radius(10px);
+}
 
 // Vertical dividers
 .nav-main > li {
-	-webkit-box-shadow: #C2A988 -1px 0, #f3f3f3 -2px 0;
-	-moz-box-shadow: #C2A988 -1px 0, #f3f3f3 -2px 0;
-	box-shadow: #C2A988 -1px 0, #f3f3f3 -2px 0;
+ 	@shadow: #C2A988 -1px 0, #f3f3f3 -2px 0;
+	.box-shadow(@shadow);
 }
 
 // hide divider on last element and any surrounding highlight
@@ -84,10 +80,11 @@
 .nav-main > li.active,
 .nav-main > li.active + li
 {
-	box-shadow: none;
+	.box-shadow(none);
 }
 
-//// Location Highlighting
+/*  -- Location Highlighting --
+	------------------------------------------------------------------------- */
 
 // Current section
 .nav-main > li.active > a {
@@ -99,12 +96,31 @@
 	color: #fff;
 	background: url(../../img/bg_main.jpg) top left repeat;
 	
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, rgba(255, 255, 255, 1) -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, rgba(255, 255, 255, 1) -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
-	box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, rgba(255, 255, 255, 1) -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
+	@shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, rgba(255, 255, 255, 1) -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
+	.box-shadow(@shadow);
 }
 
-// Icons & Microcopy
+/*  -- Hover Effects --
+	------------------------------------------------------------------------- */
+	
+.nav-main > li > a {
+	text-decoration: none;
+	.transition(background .2s ease-in-out);
+}
+
+.nav-main > li > a:hover {
+	background: rgba(255,255,255,0.5);
+}
+
+.nav-main > li.active > a:hover {
+	background: url(../../img/bg_main.jpg) top left repeat;
+}
+
+
+/*  -- Item Content Styling --
+	------------------------------------------------------------------------- */
+
+// Icons
 @font-face { //	Use for font based icons
 	font-family: 'IcoMoonRegular';
 	src: url('../../fonts/icomoon-webfont.eot');
@@ -116,7 +132,6 @@
 	font-style: normal;
 }
 
-// Icons
 .nav-main .navItem-icon {
 	display: block;
 	font-size: 24px;
@@ -136,82 +151,89 @@
 }
 
 
-.nav-main li > a {
-	text-decoration: none;
-	-webkit-transition: background .4s ease-in-out;
-	-moz-transition: background .4s ease-in-out;
-	-o-transition: background .4s ease-in-out;
-	-ms-transition: background .4s ease-in-out;
-	transition: background .4s ease-in-out;
-}
+/*  ====== Mobile Menu Items ======
+	Restyle the menu as a stacked list for mobiles
+	========================================================================= */
 
-// Hover Effects
-.nav-main li > a:hover {
-	background: rgba(255,255,255,0.5);
-}
-
-.nav-main > li.active > a:hover {
-	background: inherit;
-}
-
-
-/*  -- Mobile Menu Items -- 
-	Restyle the menu as a stacked list for mobiles */
+@media (max-width: 980px) {
+	.nav-mainWrapper .nav-collapse.in {
 	
-.nav-wrapper .nav-collapse.in {
-
-	// Block-level the nav
-	.nav {
-		float: none;
-		margin: 0 0 (@baseLineHeight / 2);
-	}
-	.nav > li {
-		float: none;
-		width: 100%;
-	}
-	.nav > li > a {
-		margin-bottom: 2px;
-	}
-	.nav > .divider-vertical {
-		display: none;
-	}
+		// Block-level the nav
+		.nav {
+			float: none;
+			margin: 0 0 (@baseLineHeight / 2);
+		}
+		.nav > li {
+			float: none;
+			width: 100%;
+			@shadow: rgba(255, 255, 255, 1) 1px 1px 1px inset, rgba(0, 0, 0, 0.2) -1px -1px 1px inset;
+			.box-shadow(@shadow);
+			.border-radius(3px);
+		}
+		.nav > li a {
+			text-align: left;
+			margin-bottom: 6px;
+		}
+		
+		// Nav and dropdown links
+		.nav > li a {
+			padding: 6px 15px;
+			font-weight: bold;
+			color: @linkColor;
+			.border-radius(3px);
+		}
 	
-	// Nav and dropdown links
-	.nav > li > a,
-	.dropdown-menu a {
-		padding: 6px 15px;
-		font-weight: bold;
-		color: @navbarLinkColor;
-		.border-radius(3px);
-	}
-	.dropdown-menu li + li a {
-		margin-bottom: 2px;
-	  }
-	.nav > li > a:hover,
-	.dropdown-menu a:hover {
-		background-color: @navbarBackground;
-	}
-	
-	// Dropdowns
-	.dropdown-menu {
-		position: static;
-		top: auto;
-		left: auto;
-		float: none;
-		display: block;
-		max-width: none;
-		margin: 0 15px;
-		padding: 0;
-		background-color: transparent;
-		border: none;
-		.border-radius(0);
-		.box-shadow(none);
-	}
-	.dropdown-menu:before,
-	.dropdown-menu:after {
-		display: none;
-	}
-	.dropdown-menu .divider {
-		display: none;
+		.nav > li > a:hover,
+		.dropdown-menu a:hover {
+			background: rgba(255,255,255,0.5);
+			color: darken(@linkColor, 15%) ;
+		}
+		
+		// Current section
+		.nav-main li.active > a {
+			color: @white;
+			background: @linkColor;
+			.box-shadow(none);
+		}
+		
+		// Current page
+		.nav-main > li > a.current {
+			color: @white;
+			background: @linkColor;
+			.box-shadow(none);
+		}
+			
+		// Dropdowns
+		.dropdown-menu {
+			position: static;
+			top: auto;
+			left: auto;
+			float: none;
+			display: block;
+			max-width: none;
+			margin: 0 15px;
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			.border-radius(0);
+			.box-shadow(none);
+		}
+		.dropdown-menu:before,
+		.dropdown-menu:after {
+			display: none;
+		}
+		.dropdown-menu .divider {
+			display: none;
+		}
+		
+		//Icon
+		.nav-main .navItem-icon {
+			display: inline;
+			font-size: 16px;
+		}
+		
+		.dropdown .caret {
+			vertical-align: baseline;
+		}
 	}
 }

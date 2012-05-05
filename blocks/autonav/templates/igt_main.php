@@ -1,11 +1,11 @@
 <?php defined('C5_EXECUTE') or die("Access Denied.");
 
-/* 	NAV LIST
-   	==========================================================================
-   	Displays a navigation list using the Twitter Bootstrap Nav List component (http://twitter.github.com/bootstrap/components.html#navs)
+/*	******** Main Theme Navigation ********
+	The main navigation for the site. Styled to fit theme.
+	Based on the Twitter Bootstrap Nav List component (http://twitter.github.com/bootstrap/components.html#navs)
 	Autonav template based upon clean block template by Jordan Lev (https://github.com/jordanlev/c5_clean_block_templates)
 	Must be used in conjunction with an Ignition Theory Theme - http://ignitiontheory.co.uk
-   	========================================================================== */
+	************************************************************************* */
 
 /*	NOTE: For extra functionality, you can add the following page attributes (via Dashboard -> Pages and Themes -> Attributes):
 
@@ -27,7 +27,8 @@
 
 	5)	Handle: nav_item_icon
 		Type: Image File OR Text
-		Functionality: Any image added to this attribute will be displayed next to the relevent nav item. Image will the sized to fit using css. Text uses a font to form the icon.		
+		Functionality: Any image added to this attribute will be displayed next to the relevent nav item. Image will the sized to fit using css. Text uses a font to form the icon.	
+			
 	6)	Handle: nav_item_description
 		Type: Text
 		Functionality: descriptive microcopy to accompany menu item
@@ -37,9 +38,9 @@
 		Functionality: Assign a shortcut key to a particular page. For better accessibility.
 
 
-/*************************************************
- * DESIGNERS: SCROLL DOWN! (IGNORE ALL THIS STUFF)
- *************************************************/
+/*  ====== Control Code ======
+	Constructs the basic code used in the navigation list
+	========================================================================= */
 
 $c = Page::getCurrentPage();
 
@@ -201,9 +202,11 @@ for ($i = 0; $i < $navItemCount; $i++) {
 	$navItems[] = $navItem;
 }
 
-/******************************************************************************
-* DESIGNERS: CUSTOMIZE THE CSS CLASSES STARTING HERE...
-*/
+
+/*  ---- Item Classes ----
+	Define custom classes for different list items
+	--------------------------------------------------------------------------*/
+
 foreach ($navItems as $ni) {
 	// Seperate classes for <a> and <li> tags
 	$anchorClasses = array();
@@ -271,11 +274,12 @@ foreach ($navItems as $ni) {
 	$ni->listItemClasses = implode(" ", $listItemClasses);
 }
 
-/******************************************************************************
-* DESIGNERS: CUSTOMIZE THE HTML STARTING HERE...
-*/
 
-echo '<nav class="nav-wrapper">';
+/*  ====== View Code ======
+	Constructs controller output in to easily styled code.
+	========================================================================= */
+
+echo '<nav class="nav-mainWrapper">';
 
 echo '<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">Menu</a>';	
 echo '<div class="nav-collapse">';
@@ -293,7 +297,7 @@ foreach ($navItems as $ni) {
 		$caret = '';
 	}
 	
-	// get icon
+	// get icony if defined
 	if (!$ni->icon) {
 		$icon = '';
 	} else {
@@ -304,13 +308,13 @@ foreach ($navItems as $ni) {
 		}
 	}
 	
-	// get description
+	// get descriptiony if defined
 	$description = '';
 	if ($ni->description) {
 		$description = '<span class="navItem-description">' . $ni->description . '</span>';
 	}
 	
-		// get description
+	// get accesskey if defined
 	$accesskey = '';
 	if ($ni->accessKey) {
 		$accesskey = 'accesskey="' . $ni->accessKey . '" ';
@@ -323,8 +327,6 @@ foreach ($navItems as $ni) {
 	} else {
 		echo '<span class="' . $ni->anchorClasses . '">' . $icon . $ni->name . $description . '</span>';
 	}
-	
-	//print_r($ni);
 	
 	if ($ni->hasSubmenu) {
 		if ($ni->level == 1) {
@@ -339,30 +341,3 @@ foreach ($navItems as $ni) {
 }
 
 echo '</ul></div></nav>'; //closes the top-level menu
-
-
-/*
-echo '<nav class="nav_main">';
-echo '<ul>'; //opens the top-level menu
-
-foreach ($navItems as $ni) {
-	
-	echo '<li class="' . $ni->listItemClasses . '">'; //opens a nav item
-	
-	// get icon
-	$icon = '';
-	if ($ni->icon) {
-		$icon = '<span class="navItem-icon"><img src="' . $ni->icon->src . '"/></span>';
-	}
-	
-	if ($ni->isEnabled) {
-		echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->anchorClasses . '">' . $icon . $ni->name . '</a>';
-	} else {
-		echo '<li class="nav-header">' . $icon . $ni->name . '</li>';
-	}
-	
-	echo '</li>'; //closes a nav item
-}
-
-echo '</ul></nav>'; //closes the top-level menu
-*/
