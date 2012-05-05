@@ -1,0 +1,16 @@
+/*	******** search.less ********
+	Styling for the search block custom templates
+	************************************************************************* */
+/*  ====== Fixes ======
+	========================================================================= */.form-search .search-block-input-wrapper {
+  overflow: hidden;
+  padding-right: .5em;
+}
+.form-search .search-query {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+.form-search .search-block-submit {
+  float: right;
+}

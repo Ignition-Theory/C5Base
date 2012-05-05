@@ -17,6 +17,7 @@
 				$a->setCustomTemplate('image','igt_theme/view.php');
 				
 				$a->setCustomTemplate('file','c5base_button.php');
+				$a->setCustomTemplate('search','c5base_theme.php');
 				$a->display($c);
 
 				?>

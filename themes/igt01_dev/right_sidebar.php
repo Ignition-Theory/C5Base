@@ -13,27 +13,24 @@
 				
 					<div class="span8">
 						<section class="mainBox">
-							<article class="main-article">
 								<?php
 								$a = new Area('Main');
 								$a->setCustomTemplate('content','igt_theme/view.php');
 								$a->setCustomTemplate('image','igt_theme/view.php');
+								$a->setCustomTemplate('search','c5base_theme.php');
 								$a->display($c);
 								?>
-							</article>
 						</section>
 					</div>
 					
 					<div class="span4">
 						<section class="mainBox2">
-							<article class="sidebar">
 								<?php
 								$a = new Area('Sidebar');
 								$a->setCustomTemplate('content','igt_theme/view.php');
 								$a->setCustomTemplate('image','igt_theme/view.php');
 								$a->display($c);
 								?>
-							</article>
 						</section>
 					</div>
 					

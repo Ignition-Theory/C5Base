@@ -11,11 +11,8 @@
 	-webkit-box-shadow: rgba(255,255,255,0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
 	-moz-box-shadow: rgba(255,255,255,0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
 	box-shadow: rgba(255,255,255,0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
-
-
-
-
 }
+
 
 .mainBox2 {
 	padding: 30px;
@@ -49,4 +46,11 @@
 	}
 	
 	
+}
+
+
+// Remove margins from last block
+.mainBox > *:last-child,
+.mainBox2 > *:last-child {
+	margin-bottom: 0;
 }
