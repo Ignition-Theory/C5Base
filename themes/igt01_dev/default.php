@@ -3,7 +3,7 @@
 <!-- Include HTML Head -->
 <?php $this->inc('elements/html_head.php'); ?>
 
-<div class="container pageWrapper">
+<div class="container page">
 
 <!-- Include Nav & Logo etc. -->
 <?php $this->inc('elements/page_header.php'); ?>
