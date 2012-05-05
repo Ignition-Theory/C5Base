@@ -2,7 +2,7 @@
 
 <?php $this->inc('elements/html_head.php'); ?>
 
-<div class="container pageWrapper">
+<div class="container page">
 
 <?php $this->inc('elements/page_header.php'); ?>
 

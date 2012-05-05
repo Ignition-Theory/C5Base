@@ -18,8 +18,4 @@ WebFontConfig = {
 
 /* Enable Tooltips */
 
-// $("[rel=tooltip]").tooltip();
-
-
-
-
+//$("[rel=tooltip]").tooltip({selector : 'page'});
