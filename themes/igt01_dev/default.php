@@ -13,7 +13,12 @@
 			<article class="sidebar">
 				<?php 
 				$a = new Area('Sidebar');
+				$a->setCustomTemplate('content','igt_theme/view.php');
+				$a->setCustomTemplate('image','igt_theme/view.php');
+				
+				$a->setCustomTemplate('file','c5base_button_theme.php');
 				$a->display($c);
+
 				?>
 			</article>
 	</div>
