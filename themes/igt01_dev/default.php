@@ -3,7 +3,7 @@
 <!-- Include HTML Head -->
 <?php $this->inc('elements/html_head.php'); ?>
 
-<div class="container page">
+<div class="container pageWrapper">
 
 <!-- Include Nav & Logo etc. -->
 <?php $this->inc('elements/page_header.php'); ?>
@@ -16,7 +16,7 @@
 				$a->setCustomTemplate('content','igt_theme/view.php');
 				$a->setCustomTemplate('image','igt_theme/view.php');
 				
-				$a->setCustomTemplate('file','c5base_button_theme.php');
+				$a->setCustomTemplate('file','c5base_button.php');
 				$a->display($c);
 
 				?>
