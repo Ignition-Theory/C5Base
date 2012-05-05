@@ -279,12 +279,12 @@ foreach ($navItems as $ni) {
 	Constructs controller output in to easily styled code.
 	========================================================================= */
 
-echo '<nav class="nav-mainWrapper">';
+echo '<nav class="nav-main">';
 
-echo '<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">Menu</a>';	
+echo '<a class="btn btn-mainnav" data-toggle="collapse" data-target=".nav-collapse">Menu</a>';	
 echo '<div class="nav-collapse">';
 
-echo '<ul class="nav nav-main nav-col' . $navItemsDisplayed . '">'; //opens the top-level menu
+echo '<ul class="nav nav-col' . $navItemsDisplayed . '">'; //opens the top-level menu
 
 foreach ($navItems as $ni) {
 
