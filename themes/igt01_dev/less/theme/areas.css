@@ -1,0 +1,33 @@
+.mainBox {
+  padding: 30px;
+  background: #F4FFD9;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
+  box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
+}
+.mainBox2 {
+  padding: 30px;
+  background: #424252;
+  color: #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
+  box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.8) -1px -1px 1px inset, rgba(0, 0, 0, 0.3) 0 0 10px;
+}
+.mainBox2 p {
+  font-size: 1em;
+}
+.mainBox2 h1,
+.mainBox2 h2,
+.mainBox2 h3,
+.mainBox2 h4,
+.mainBox2 h5,
+.mainBox2 h6 {
+  font-family: Stoke, Cantarell, Helvetica, Arial, sans-serif;
+  color: #44bac1;
+}
