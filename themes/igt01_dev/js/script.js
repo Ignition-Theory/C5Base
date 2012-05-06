@@ -19,3 +19,10 @@ WebFontConfig = {
 /* Enable Tooltips */
 
 //$("[rel=tooltip]").tooltip({selector : 'page'});
+
+
+
+
+
+/* Autostart carousel slideshows */
+$('.carousel').carousel('cycle');
