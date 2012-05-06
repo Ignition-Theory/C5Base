@@ -1,7 +1,62 @@
+/* Block Styling 
+   ==========================================================================
+   Styling for generic & custom blocks to make them fit the theme. 
+   Create a template named 'theme' for each block that needs styling.
+   ========================================================================== */
+   
+   
+/* 	Variables - Customise for project
+	========================================================================= */
+   
+// 	Maximum width of any navigation icons
+	@navIconMaxWidth: 16px;
+   
+
+   
+   
+
+   
+/* 	Navigation Bar (fixed_navbar.php, static_navbar.php)
+	========================================================================= */
+   
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+
+.dropdown-menu,
+.navbar .dropdown-menu,
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu {
+ margin-top: 0px;
+}
+
+.btn-navbar {
+	color: @grayLighter;
+}
+
+.btn-navbar:hover {
+	color: @white;
+}
+
+/* 	Navigation Icons (nav_list.php)
+	========================================================================= */
+	
+
+	
 /* 	Site Map (site_map.php)
 	=========================================================================
 	Based on Slickmap by Matt Everson of Astuteo http://astuteo.com/slickmap
 	========================================================================== */
+	
+.siteMap {
+	background: #fff;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px #333 solid;
+	.clearfix();
+}
 
 /*	------------------------------------------------------------
 	NUMBER OF COLUMNS: Adjust .siteMap li to set the number
@@ -55,7 +110,7 @@
 .siteMap .home {
 	display: block;
 	float: none;
-	background: #ffffff url('../../img/slickmap/L1-left.png') center bottom no-repeat;
+	background: #ffffff url('../img/slickmap/L1-left.png') center bottom no-repeat;
 	position: relative;
 	z-index: 2;
 	padding: 0 0 30px 0;
@@ -63,7 +118,7 @@
 }
 .siteMap li {
 	float: left;
-	background: url('../../img/slickmap/L1-center.png') center top no-repeat;
+	background: url('../img/slickmap/L1-center.png') center top no-repeat;
 	padding: 30px 0;
 	margin-top: -30px;
 }
@@ -75,7 +130,7 @@
 	font-weight: bold;
 	text-align: center;
 	color: black;	
-	background: #c3eafb url('../../img/slickmap/white-highlight.png') top left repeat-x;
+	background: #c3eafb url('../img/slickmap/white-highlight.png') top left repeat-x;
 	border: 2px solid #b5d9ea;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -87,7 +142,7 @@
 	border-color: #97bdcf;
 }
 .siteMap li:last-child {
-	background: url('../../img/slickmap/L1-right.png') center top no-repeat;
+	background: url('../img/slickmap/L1-right.png') center top no-repeat;
 }
 .siteMap a:link:before,
 .siteMap a:visited:before {
@@ -110,7 +165,7 @@
 	clear: left;
 	margin-top: 0;
 	padding: 10px 0 0 0;
-	background: url('../../img/slickmap/vertical-line.png') center bottom repeat-y;
+	background: url('../img/slickmap/vertical-line.png') center bottom repeat-y;
 }
 .siteMap li li a {
 	background-color: #cee3ac;
@@ -124,7 +179,7 @@
 	padding-top: 30px;
 }
 .siteMap li li:last-child {
-	background: url('../../img/slickmap/vertical-line.png') center bottom repeat-y;
+	background: url('../img/slickmap/vertical-line.png') center bottom repeat-y;
 }
 .siteMap li li a:link:before,
 .siteMap li li a:visited:before {
@@ -138,10 +193,10 @@
 	width: 100%;
 	float: right;
 	padding: 9px 0 10px 0;
-	background: #ffffff url('../../img/slickmap/L3-ul-top.png') center top no-repeat;
+	background: #ffffff url('../img/slickmap/L3-ul-top.png') center top no-repeat;
 }
 .siteMap li li li {
-	background: url('../../img/slickmap/L3-center.png') left center no-repeat;
+	background: url('../img/slickmap/L3-center.png') left center no-repeat;
 	padding: 5px 0;
 }
 .siteMap li li li a {
@@ -158,10 +213,10 @@
 }
 .siteMap li li li:first-child {
 	padding: 15px 0 5px 0;
-	background: url('../../img/slickmap/L3-li-top.png') left center no-repeat;
+	background: url('../img/slickmap/L3-li-top.png') left center no-repeat;
 }
 .siteMap li li li:last-child {
-	background: url('../../img/slickmap/L3-bottom.png') left center no-repeat;
+	background: url('../img/slickmap/L3-bottom.png') left center no-repeat;
 }
 .siteMap li li li a:link:before,
 .siteMap li li li a:visited:before {

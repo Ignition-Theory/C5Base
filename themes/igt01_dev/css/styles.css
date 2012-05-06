@@ -40,7 +40,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * http://twitter.github.com/framework/
+ * http://twitter.github.com/
  */
 article,
 aside,
@@ -4376,13 +4376,57 @@ a.badge:hover {
     overflow: visible !important;
   }
 }
-/*  ---- Slickmap ----
-	For pretty site maps http://astuteo.com/slickmap
-	--------------------------------------------------------------------------*/
+/*  ====== Block Styling ======
+	Styling for each Block type is integrated in to Theme to reduce HTTP requests.
+	Often uses frameworks shown above.
+	========================================================================= */
+/* Block Styling 
+   ==========================================================================
+   Styling for generic & custom blocks to make them fit the theme. 
+   Create a template named 'theme' for each block that needs styling.
+   ========================================================================== */
+/* 	Variables - Customise for project
+	========================================================================= */
+/* 	Navigation Bar (fixed_navbar.php, static_navbar.php)
+	========================================================================= */
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+.dropdown-menu,
+.navbar .dropdown-menu,
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu {
+  margin-top: 0px;
+}
+.btn-navbar {
+  color: #eeeeee;
+}
+.btn-navbar:hover {
+  color: #ffffff;
+}
+/* 	Navigation Icons (nav_list.php)
+	========================================================================= */
 /* 	Site Map (site_map.php)
 	=========================================================================
 	Based on Slickmap by Matt Everson of Astuteo http://astuteo.com/slickmap
 	========================================================================== */
+.siteMap {
+  background: #fff;
+  padding: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px #333 solid;
+  *zoom: 1;
+}
+.siteMap:before,
+.siteMap:after {
+  display: table;
+  content: "";
+}
+.siteMap:after {
+  clear: both;
+}
 /*	------------------------------------------------------------
 	NUMBER OF COLUMNS: Adjust .siteMap li to set the number
 	of columns required in your site map. The default is 
@@ -4449,7 +4493,7 @@ a.badge:hover {
 .siteMap .home {
   display: block;
   float: none;
-  background: #ffffff url('../../img/slickmap/L1-left.png') center bottom no-repeat;
+  background: #ffffff url('../img/slickmap/L1-left.png') center bottom no-repeat;
   position: relative;
   z-index: 2;
   padding: 0 0 30px 0;
@@ -4457,7 +4501,7 @@ a.badge:hover {
 }
 .siteMap li {
   float: left;
-  background: url('../../img/slickmap/L1-center.png') center top no-repeat;
+  background: url('../img/slickmap/L1-center.png') center top no-repeat;
   padding: 30px 0;
   margin-top: -30px;
 }
@@ -4469,7 +4513,7 @@ a.badge:hover {
   font-weight: bold;
   text-align: center;
   color: black;
-  background: #c3eafb url('../../img/slickmap/white-highlight.png') top left repeat-x;
+  background: #c3eafb url('../img/slickmap/white-highlight.png') top left repeat-x;
   border: 2px solid #b5d9ea;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -4482,7 +4526,7 @@ a.badge:hover {
   border-color: #97bdcf;
 }
 .siteMap li:last-child {
-  background: url('../../img/slickmap/L1-right.png') center top no-repeat;
+  background: url('../img/slickmap/L1-right.png') center top no-repeat;
 }
 .siteMap a:link:before,
 .siteMap a:visited:before {
@@ -4503,7 +4547,7 @@ a.badge:hover {
   clear: left;
   margin-top: 0;
   padding: 10px 0 0 0;
-  background: url('../../img/slickmap/vertical-line.png') center bottom repeat-y;
+  background: url('../img/slickmap/vertical-line.png') center bottom repeat-y;
 }
 .siteMap li li a {
   background-color: #cee3ac;
@@ -4517,7 +4561,7 @@ a.badge:hover {
   padding-top: 30px;
 }
 .siteMap li li:last-child {
-  background: url('../../img/slickmap/vertical-line.png') center bottom repeat-y;
+  background: url('../img/slickmap/vertical-line.png') center bottom repeat-y;
 }
 .siteMap li li a:link:before,
 .siteMap li li a:visited:before {
@@ -4529,10 +4573,10 @@ a.badge:hover {
   width: 100%;
   float: right;
   padding: 9px 0 10px 0;
-  background: #ffffff url('../../img/slickmap/L3-ul-top.png') center top no-repeat;
+  background: #ffffff url('../img/slickmap/L3-ul-top.png') center top no-repeat;
 }
 .siteMap li li li {
-  background: url('../../img/slickmap/L3-center.png') left center no-repeat;
+  background: url('../img/slickmap/L3-center.png') left center no-repeat;
   padding: 5px 0;
 }
 .siteMap li li li a {
@@ -4549,66 +4593,15 @@ a.badge:hover {
 }
 .siteMap li li li:first-child {
   padding: 15px 0 5px 0;
-  background: url('../../img/slickmap/L3-li-top.png') left center no-repeat;
+  background: url('../img/slickmap/L3-li-top.png') left center no-repeat;
 }
 .siteMap li li li:last-child {
-  background: url('../../img/slickmap/L3-bottom.png') left center no-repeat;
+  background: url('../img/slickmap/L3-bottom.png') left center no-repeat;
 }
 .siteMap li li li a:link:before,
 .siteMap li li li a:visited:before {
   color: #ccae14;
   font-size: 9px;
-}
-/*  ====== Block Styling ======
-	Styling for each Block type is integrated in to Theme to reduce HTTP requests.
-	Often uses frameworks shown above.
-	========================================================================= */
-/* Block Styling 
-   ==========================================================================
-   Styling for generic & custom blocks to make them fit the theme. 
-   Create a template named 'theme' for each block that needs styling.
-   ========================================================================== */
-/* 	Variables - Customise for project
-	========================================================================= */
-/* 	Navigation Bar (fixed_navbar.php, static_navbar.php)
-	========================================================================= */
-ul.nav li.dropdown:hover ul.dropdown-menu {
-  display: block;
-}
-.dropdown-menu,
-.navbar .dropdown-menu,
-.nav-tabs .dropdown-menu,
-.nav-pills .dropdown-menu {
-  margin-top: 0px;
-}
-.btn-navbar {
-  color: #eeeeee;
-}
-.btn-navbar:hover {
-  color: #ffffff;
-}
-/* 	Navigation Icons (nav_list.php)
-	========================================================================= */
-/* 	Site Map (site_map.php)
-	=========================================================================
-	Based on Slickmap by Matt Everson of Astuteo http://astuteo.com/slickmap
-	========================================================================== */
-.siteMap {
-  background: #fff;
-  padding: 20px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px #333 solid;
-  *zoom: 1;
-}
-.siteMap:before,
-.siteMap:after {
-  display: table;
-  content: "";
-}
-.siteMap:after {
-  clear: both;
 }
 /* 	==== Image Styling ====
 	A collection of effects rendered on top of images.
@@ -4908,10 +4901,12 @@ body.rtl .formError .formErrorArrow {
   background: #ddd;
 }
 /*	******** search.less ********
-	Styling for the search block custom templates
+	Styling for search block custom templates
 	************************************************************************* */
-/*  ====== Fixes ======
-	========================================================================= */.form-search .search-block-input-wrapper {
+/*  ====== c5base_basic.php ======
+	Basic layout using Twitter Bootstrap
+	========================================================================= */
+.form-search .search-block-input-wrapper {
   overflow: hidden;
   padding-right: .5em;
 }
@@ -4923,7 +4918,17 @@ body.rtl .formError .formErrorArrow {
 .form-search .search-block-submit {
   float: right;
 }
-/*  ====== Theme Styling ======
+.form-search .searchResults {
+  margin-top: 20px;
+}
+.form-search .searchResult {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: #999999 1px solid;
+}
+/*  ====== c5base_theme.php ======
+	Builds upon c5base_basic.php and fits theme design
+	========================================================================= *//*  ====== Theme Styling ======
 	The stylesheets used to make a unique Theme
 	========================================================================= */
 /*	******** page.less ********
@@ -4934,7 +4939,7 @@ body.rtl .formError .formErrorArrow {
 	========================================================================= */
 body {
   background-color: #FFE9CF;
-  background-image: url(../../img/bg_bodyTop.svg), url(../../img/bg_bodyBorder.svg), url(../../img/bg_body.jpg);
+  background-image: url(../img/bg_bodyTop.svg), url(../img/bg_bodyBorder.svg), url(../img/bg_body.jpg);
   background-position: left top, left top, left top;
   background-repeat: repeat-x, repeat-y, repeat;
   background-size: auto, 100% auto, auto;
@@ -4945,7 +4950,7 @@ body {
 }
 .mainContent {
   padding: 50px;
-  background: url(../../img/bg_main.jpg) top left repeat;
+  background: url(../img/bg_main.jpg) top left repeat;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -5003,6 +5008,10 @@ body {
 .mainBox2 h6 {
   font-family: Stoke, Cantarell, Helvetica, Arial, sans-serif;
   color: #44bac1;
+}
+.mainBox > *:last-child,
+.mainBox2 > *:last-child {
+  margin-bottom: 0;
 }
 /*	******** Main Navigation  ********
 	The main navigation for the site. Styled to fit theme.
@@ -5122,7 +5131,7 @@ body {
 }
 .nav-main .nav > li > a.current {
   color: #fff;
-  background: url(../../img/bg_main.jpg) top left repeat;
+  background: url(../img/bg_main.jpg) top left repeat;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, #ffffff -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, #ffffff -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
   box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, #ffffff -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
@@ -5141,14 +5150,14 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 .nav-main .nav > li.active > a:hover {
-  background: url(../../img/bg_main.jpg) top left repeat;
+  background: url(../img/bg_main.jpg) top left repeat;
 }
 /*  -- Item Content Styling --
 	------------------------------------------------------------------------- */
 @font-face {
   font-family: 'IcoMoonRegular';
-  src: url('../../fonts/icomoon-webfont.eot');
-  src: url('../../fonts/icomoon-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/icomoon-webfont.woff') format('woff'), url('../../fonts/icomoon-webfont.ttf') format('truetype'), url('../../fonts/icomoon-webfont.svg#IcoMoon') format('svg');
+  src: url('../fonts/icomoon-webfont.eot');
+  src: url('../fonts/icomoon-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon-webfont.woff') format('woff'), url('../fonts/icomoon-webfont.ttf') format('truetype'), url('../fonts/icomoon-webfont.svg#IcoMoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }

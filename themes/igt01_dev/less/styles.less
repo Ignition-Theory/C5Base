@@ -47,14 +47,14 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * http://twitter.github.com/framework/
+ * http://twitter.github.com/
  */
 
 // CSS Reset
 @import "framework/reset.less";
 
 // Core variables and mixins
-@import "theme/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "framework/mixins.less";
 
 // Grid system and page structure
@@ -69,9 +69,9 @@
 @import "framework/tables.less";
 
 // Components: common
-@import "framework/sprites.less";
+//@import "framework/sprites.less"; // Problems when compiling due to relative links
 @import "framework/dropdowns.less";
-//@import "framework/wells.less";
+//@import "wells.less";  // Similar functionality featured in theme_areas.less
 @import "framework/component-animations.less";
 @import "framework/close.less";
 
@@ -89,16 +89,16 @@
 
 // Components: Popovers
 @import "framework/modals.less";
-//@import "framework/tooltip.less";
+//@import "framework/tooltip.less"; // Conflicts with C5 UI
 @import "framework/popovers.less";
 
 // Components: Misc
-//@import "framework/thumbnails.less";
+//@import "thumbnails.less"; // Unused
 @import "framework/labels-badges.less";
 @import "framework/progress-bars.less";
 @import "framework/accordion.less";
 @import "framework/carousel.less";
-//@import "framework/hero-unit.less";
+//@import "hero-unit.less"; // Similar functionality featured in theme_areas.less
 
 // Utility classes
 @import "framework/utilities.less"; // Has to be last to override when necessary
@@ -110,31 +110,24 @@
 @import "framework/responsive.less";
 
 
-/*  ---- Slickmap ----
-	For pretty site maps http://astuteo.com/slickmap
-	--------------------------------------------------------------------------*/
-	
-@import "framework/slickmap.less";
-
-
 /*  ====== Block Styling ======
 	Styling for each Block type is integrated in to Theme to reduce HTTP requests.
 	Often uses frameworks shown above.
 	========================================================================= */
 	
-@import "blocks/autonav.less";
-@import "blocks/image.less";
-@import "blocks/form.less";
-@import "blocks/search.less";
+@import "block_autonav.less";
+@import "block_image.less";
+@import "block_form.less";
+@import "block_search.less";
 
 
 /*  ====== Theme Styling ======
 	The stylesheets used to make a unique Theme
 	========================================================================= */
-	
-@import "theme/page.less"; // Layouts for header, footer and Page Types
-@import "theme/areas.less"; // Defines visual design for content areas. Used on page types and manually assigned within CMS
-@import "theme/navigation.less"; // Styles the main navigation block
-@import "theme/iefixes.less"; // Overrides for IE and other troublesome browsers
-@import "theme/print.less" print; // styles for printing web pages. Use in combination with print.less from framework
-@import "theme/concrete5.less"; // Minor customisation for C5 interface to match theme
+
+@import "theme_page.less"; // Layouts for header, footer and Page Types
+@import "theme_areas.less"; // Defines visual design for content areas. Used on page types and manually assigned within CMS
+@import "theme_navigation.less"; // Styles the main navigation block
+@import "theme_iefixes.less"; // Overrides for IE and other troublesome browsers
+@import "theme_print.less" print; // styles for printing web pages. Use in combination with print.less from framework
+@import "theme_concrete5.less"; // Minor customisation for C5 interface to match theme
