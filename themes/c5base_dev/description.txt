@@ -1,3 +1,2 @@
 Custom Theme C5Base (Development)
-A Concrete5 theme crafted by Ignition Theory. Built on the <a target="_blank" href="http://c5base.ignitiontheory.net">C5Base theme</a> framework. This copy is for development purposes only and is not suitable for use on a live production site. Use a LESS compiler and then the ant build script included in the source files to produce a production ready version.
-<a target="_blank" href="http://ignitiontheory.co.uk">ignitiontheory.co.uk</a>
+A Concrete5 theme crafted by Ignition Theory. Built on the <a target="_blank" href="http://c5base.ignitiontheory.net">C5Base theme framework</a>. This copy is for development purposes only and is not suitable for use on a live production site. Use a LESS compiler and then the ant build script included in the source files to produce a production ready version. <a target="_blank" href="http://ignitiontheory.co.uk">ignitiontheory.co.uk</a>

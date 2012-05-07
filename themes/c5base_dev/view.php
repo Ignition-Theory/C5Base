@@ -1,26 +1,27 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+<!-- Include HTML Head -->
 <?php $this->inc('elements/html_head.php'); ?>
 
-	<nav class="site-navigation mobile-hide">
-		<?php 
-		$bt = BlockType::getByHandle('autonav');
-		$bt->controller->displayPages = 'top';
-		$bt->controller->orderBy = 'display_asc';
-		$bt->render('templates/basic_navigation');
-		?>
-	</nav>
+<div class="container pageContainer">
 
-<div class="container wrapper-content">
+	<!-- Include Nav & Logo etc. -->
+	<?php $this->inc('elements/page_header.php'); ?>
+	
 	<div class="row">
-		<div class="col_12">
-			<section class="contentBox">
-				<article class="main-article">
+		<div class="pageBody">
+			<div class="span12">
+				<section class="areaMain">
 					<?php print $innerContent; ?>
-				</article>
-			</section>
+				</section>
+			</div>
 		</div>
 	</div>
+	
+	<!-- Include page footer -->
+	<?php  $this->inc('elements/page_footer.php'); ?>
+
 </div>
 
+<!-- Include HTML Foot -->
 <?php  $this->inc('elements/html_foot.php'); ?>

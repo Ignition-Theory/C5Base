@@ -1,24 +1,34 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+<!-- Include HTML Head -->
 <?php $this->inc('elements/html_head.php'); ?>
 
-<?php $this->inc('elements/page_header.php'); ?>
+<div class="container pageContainer">
 
-<div class="container wrapper-content">
+	<!-- Include Nav & Logo etc. -->
+	<?php $this->inc('elements/page_header.php'); ?>
+	
 	<div class="row">
-		<div class="col_12">
-			<section class="noBGBox">
-				<article class="main-article">
+		<div class="pageBody noBackground">
+			<div class="span12">
+				<section class="areaMain">
 					<?php 
 					$a = new Area('Main');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
 					$a->display($c);
 					?>
-				</article>
-			</section>
+				</section>
+			</div>
 		</div>
 	</div>
+	
+	<!-- Include page footer -->
+	<?php  $this->inc('elements/page_footer.php'); ?>
+
 </div>
 
-<?php  $this->inc('elements/page_footer.php'); ?>
-
+<!-- Include HTML Foot -->
 <?php  $this->inc('elements/html_foot.php'); ?>
