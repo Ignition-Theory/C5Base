@@ -1,0 +1,1 @@
+<?php  defined('C5_EXECUTE') or die("Access Denied."); ?> <script defer src='<?php echo $this->getThemePath(); ?>/js/fda6.js'></script> <?php  Loader::element('footer_required'); ?> </body> </html>

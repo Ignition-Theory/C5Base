@@ -1,2 +1,0 @@
-Custom Theme IGT01
-A Concrete5 theme crafted by Ignition Theory.<br/>For helpful guides on how to use this theme or to ask us for some support, please visit <a target="_blank" href="http://help.ignitiontheory.co.uk">help.ignitiontheory.co.uk</a>
