@@ -9,7 +9,7 @@
 	<?php $this->inc('elements/page_header.php'); ?>
 	<div class="pageBody">
 	
-		<div class="row">
+		<div class="row-fluid">
 			<div class="span12">
 				<section class="areaMain">
 					<?php 
