@@ -47,34 +47,22 @@
 }
 
 
-.nav-main .nav > li.first,
-.nav-main .nav > li.last {
-	padding-left: 0;
-	margin-right: 0;
+//.nav-main .nav > li.first a,
+.nav-main .nav > li.last a{
+	margin-left: 0;
 }
 
 // Make links block level
 .nav-main .nav > li > a {
 	display: block;
+	margin-right: 10px;
   	padding: 10px;
-  	color: #855730;
+  	color: #58595B;
+  	font-size: 18px;
   	text-align: center;
-	
+  	text-transform: uppercase;
+	border: #CCC6A4 1px solid;
 	.border-radius(10px);
-}
-
-// Vertical dividers
-.nav-main .nav > li {
- 	@shadow: #C2A988 -1px 0, #f3f3f3 -2px 0;
-	.box-shadow(@shadow);
-}
-
-// hide divider on last element and any surrounding highlight
-.nav-main .nav > li.first,
-.nav-main .nav > li.active,
-.nav-main .nav > li.active + li
-{
-	.box-shadow(none);
 }
 
 /*  -- Location Highlighting --
@@ -82,16 +70,14 @@
 
 // Current section
 .nav-main .nav > li.active > a {
-	background: rgba(255,255,255,0.3);
+	color: #84A6CC;
+	border: #84A6CC 1px solid;
 }
 
 // Current page
 .nav-main .nav > li > a.current {
-	color: #fff;
-	background: url(../img/bg_main.jpg) top left repeat;
-	
-	@shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px inset, rgba(255, 255, 255, 1) -1px -1px 1px inset, rgba(0, 0, 0, 0.2) 1px 1px 1px inset;
-	.box-shadow(@shadow);
+	color: #84A6CC;
+	border: #84A6CC 1px solid;
 }
 
 /*  -- Hover Effects --
@@ -99,17 +85,19 @@
 	
 .nav-main .nav > li > a {
 	text-decoration: none;
-	.transition(background .2s ease-in-out);
+	@transition: color .2s ease-in-out, border .2s ease-in-out;
+	.transition(@transition);
 }
 
 .nav-main .nav > li > a:hover {
-	background: rgba(255,255,255,0.5);
+	color: #84A6CC;
+	border: #84A6CC 1px solid;
 }
 
 .nav-main .nav > li.active > a:hover {
-	background: url(../img/bg_main.jpg) top left repeat;
+	color: #84A6CC;
+	border: #84A6CC 1px solid;
 }
-
 
 /*  -- Item Content Styling --
 	------------------------------------------------------------------------- */
@@ -127,9 +115,11 @@
 }
 
 .nav-main .nav .navItem-icon {
-	display: block;
-	font-size: 24px;
-	margin: 3px;
+	width: 20px;
+	float: left;
+	margin-right: 10px;
+	font-size: 18px;
+	text-transform: none;
 	font-family: 'IcoMoonRegular';
 }
 
