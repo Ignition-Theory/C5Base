@@ -24,5 +24,9 @@ less = {}; less.env = 'development'; //prevent less from caching .less files.
 <!-- Load CMS Footer -->
 <?php  Loader::element('footer_required'); ?>
 
+<!--[if IE 6]>
+<script src="<?php echo $this->getThemePath(); ?>/js/libs/ie6.min.css"></script>
+<![endif]-->
+
 </body>
 </html>
