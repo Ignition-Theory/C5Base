@@ -1,7 +1,50 @@
-<?php  defined('C5_EXECUTE') or die("Access Denied."); ?> <?php $this->inc('elements/html_head.php'); ?> <?php $this->inc('elements/page_header.php'); ?> <div class="container wrapper-content"> <div class=row> <div class=col_12> <section class=contentBox> <article class=main-article> <?php 
+<?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
+
+
+<?php $this->inc('elements/html_head.php'); ?>
+
+<div class="container pageContainer">
+
+	
+	<?php $this->inc('elements/page_header.php'); ?>
+	<div class=pageBody>
+	
+		<div class=row-fluid>
+			<div class=span12>
+				<section class=areaMain>
+					<?php 
 					$a = new Area('Main');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
 					$a->display($c);
-					?> </article> </section> </div> </div> <div class=row> <div class=col_12> <section class=contentBox> <article class=main-article> <?php 
-					$a = new Area('Main B');
+					?>
+				</section>
+			</div>
+		</div>
+		
+		<div class=row>
+			<div class=span12>
+				<section class=areaMain>
+					<?php 
+					$a = new Area('Main 2');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
 					$a->display($c);
-					?> </article> </section> </div> </div> </div> <?php  $this->inc('elements/page_footer.php'); ?> <?php  $this->inc('elements/html_foot.php'); ?>
+					?>
+				</section>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<?php  $this->inc('elements/page_footer.php'); ?>
+
+</div>
+
+
+<?php  $this->inc('elements/html_foot.php'); ?>

@@ -1,47 +1,47 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+<!-- Include HTML Head -->
 <?php $this->inc('elements/html_head.php'); ?>
 
-<div class="container pageWrapper">
+<div class="container pageContainer">
 
-<?php $this->inc('elements/page_header.php'); ?>
-
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="mainContent">
-				<div class="row-fluid">
-				
-					<div class="span8">
-						<section class="mainBox">
-								<?php
-								$a = new Area('Main');
-								$a->setCustomTemplate('content','igt_theme/view.php');
-								$a->setCustomTemplate('image','igt_theme/view.php');
-								$a->setCustomTemplate('search','c5base_theme.php');
-								$a->display($c);
-								?>
-						</section>
-					</div>
-					
-					<div class="span4">
-						<section class="mainBox2">
-								<?php
-								$a = new Area('Sidebar');
-								$a->setCustomTemplate('content','igt_theme/view.php');
-								$a->setCustomTemplate('image','igt_theme/view.php');
-								$a->display($c);
-								?>
-						</section>
-					</div>
-					
-				</div>
-			</div>
-		</div> 	
-	</div>
-
-<?php  $this->inc('elements/page_footer.php'); ?>	
+	<!-- Include Nav & Logo etc. -->
+	<?php $this->inc('elements/page_header.php'); ?>
 	
-</div><!-- end pageWrapper -->
+	<div class="row-fluid">
+		<div class="pageBody">
+			<div class="span8">
+				<section class="areaMain">
+					<?php 
+					$a = new Area('Main');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->display($c);
+					?>
+				</section>
+			</div>
+		
+			<div class="span4">
+				<section class="areaSidebar">
+					<?php 
+					$a = new Area('Sidebar');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->display($c);
+					?>
+				</section>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Include page footer -->
+	<?php  $this->inc('elements/page_footer.php'); ?>
 
+</div>
 
+<!-- Include HTML Foot -->
 <?php  $this->inc('elements/html_foot.php'); ?>

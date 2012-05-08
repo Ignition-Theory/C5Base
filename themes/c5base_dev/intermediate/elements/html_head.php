@@ -22,7 +22,7 @@ Global to site. Each Page Type template includes this and other similar elements
 	<link type="text/plain" rel="author" href="<?php echo BASE_URL?>/humans.txt" />
 
 	<!-- CSS: implied media=all -->
-	<link rel='stylesheet' href='<?php echo $this->getThemePath(); ?>/css/cf2a.css'>	
+	<link rel='stylesheet' href='<?php echo $this->getThemePath(); ?>/css/8cde.css'>	
 	
 	<!-- Customize stylesheet contains colours and fonts that can be changed by the CMS -->
 	<!-- Remove this line if no customisation is offered -->

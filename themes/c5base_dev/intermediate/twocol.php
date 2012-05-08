@@ -3,33 +3,43 @@
 <!-- Include HTML Head -->
 <?php $this->inc('elements/html_head.php'); ?>
 
-<div class="container pageWrapper">
+<div class="container pageContainer">
 
-<!-- Include Nav & Logo etc. -->
-<?php $this->inc('elements/page_header.php'); ?>
-
-<div class="row">
-	<div class="span6">
-		<article class="sidebar mainBox">
-			<?php 
-			$a = new Area('Column A');
-			$a->display($c);
-			?>
-		</article>
+	<!-- Include Nav & Logo etc. -->
+	<?php $this->inc('elements/page_header.php'); ?>
+	
+	<div class="row-fluid">
+		<div class="pageBody">
+			<div class="span6">
+				<section class="areaMain">
+					<?php 
+					$a = new Area('Main');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->display($c);
+					?>
+				</section>
+			</div>
+			
+			<div class="span6">
+				<section class="areaMain">
+					<?php 
+					$a = new Area('Main 2');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->display($c);
+					?>
+				</section>
+			</div>
+		</div>
 	</div>
-	<div class="span6">
-		<article class="main-article mainBox2">
-			<?php 
-			$a = new Area('Column B');
-			$a->display($c);
-			?>
-		</article>
-	</div>
-</div>
-
-
-<!-- Include page footer -->
-<?php  $this->inc('elements/page_footer.php'); ?>
+	
+	<!-- Include page footer -->
+	<?php  $this->inc('elements/page_footer.php'); ?>
 
 </div>
 

@@ -5,32 +5,34 @@ Contains Navigation, Logo and other header elements. Add structural elements tha
 Global to site. Each Page Type template includes this and other similar elements.
 ================================================================================================= -->
 
-<header class="row-fluid pageHeader">
+<header class="pageHeader">
+	<div class="row-fluid">
 	
-	<!-- Area for Site Logo -->
-	<div class="span4 siteLogo">
-		<?php 
-		$a = new GlobalArea('Logo');
-		// Display site title unless block is present
-		$blocks = $a->getAreaBlocksArray($c);
-		echo '<h1 class="siteName';
-		if (!empty($blocks)) : echo ' hidden'; endif;
-		echo '">' . SITE . '</h1>';
-		$a->display($c);
-		?>
-	</div>	
-	
-	<!-- Navigation -->
-	<div class="span8 siteNavigation">
-		<?php 
-		$bt = BlockType::getByHandle('autonav');
-		$bt->controller->displayPages = 'all';
-		$bt->controller->displaySubPages = 'all';
-		$bt->controller->displaySubPageLevels = 'all';
-		$bt->controller->orderBy = 'display_asc';
-		$bt->render('templates/igt_main');
-		?>
+		<!-- Area for Site Logo -->
+		<div class="span4 siteLogo">
+			<?php 
+			$a = new GlobalArea('Logo');
+			// Display site title unless block is present
+			$blocks = $a->getAreaBlocksArray($c);
+			echo '<h1 class="siteName';
+			if (!empty($blocks)) : echo ' hidden'; endif;
+			echo '">' . SITE . '</h1>';
+			$a->display($c);
+			?>
+		</div>	
+		
+		<!-- Navigation -->
+		<div class="span8 siteNavigation">		
+			<?php
+			$a = new GlobalArea('Header Nav');
+			$a->setCustomTemplate('autonav','c5base_theme.php');
+			$a->setCustomTemplate('content','c5base_theme.php');
+			$a->setCustomTemplate('image','c5base_theme.php');
+			$a->setCustomTemplate('search','c5base_theme.php');
+			$a->display($c);
+			?>
+		</div>
+		
 	</div>
-	
 </header>
 

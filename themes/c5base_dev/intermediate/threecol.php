@@ -1,48 +1,60 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+<!-- Include HTML Head -->
 <?php $this->inc('elements/html_head.php'); ?>
 
-<?php $this->inc('elements/page_header.php'); ?>
+<div class="container pageContainer">
 
-<div class="container wrapper-content">
-	<div class="row">
+	<!-- Include Nav & Logo etc. -->
+	<?php $this->inc('elements/page_header.php'); ?>
 	
-		<div class="col_4">
-			<section class="contentBox">
-				<article class="main-article">
+	<div class="row-fluid">
+		<div class="pageBody">
+			<div class="span4">
+				<section class="areaMain">
 					<?php 
-					$a = new Area('Column A');
+					$a = new Area('Main');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
 					$a->display($c);
 					?>
-				</article>
-			</section>
-		</div>
-		
-		<div class="col_4">
-			<section class="contentBox">
-				<article class="main-article">
+				</section>
+			</div>
+			
+			<div class="span4">
+				<section class="areaMain">
 					<?php 
-					$a = new Area('Column B');
+					$a = new Area('Main 2');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
 					$a->display($c);
 					?>
-				</article>
-			</section>
-		</div>
-		
-		<div class="col_4 last">
-			<section class="contentBox">
-				<article class="main-article">
+				</section>
+			</div>
+			
+			<div class="span4">
+				<section class="areaMain">
 					<?php 
-					$a = new Area('Column C');
+					$a = new Area('Main 3');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
 					$a->display($c);
 					?>
-				</article>
-			</section>
+				</section>
+			</div>
 		</div>
-		
 	</div>
+	
+	<!-- Include page footer -->
+	<?php  $this->inc('elements/page_footer.php'); ?>
+
 </div>
 
-<?php  $this->inc('elements/page_footer.php'); ?>
-
+<!-- Include HTML Foot -->
 <?php  $this->inc('elements/html_foot.php'); ?>

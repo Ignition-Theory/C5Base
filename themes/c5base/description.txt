@@ -1,2 +1,2 @@
 Custom Theme C5Base
-A Concrete5 theme crafted by Ignition Theory. Built on the <a target="_blank" href="http://c5base.ignitiontheory.net">C5Base theme</a> framework.<br/>For helpful guides on how to use this theme or to ask us for some support, please visit <a target="_blank" href="http://help.ignitiontheory.co.uk">help.ignitiontheory.co.uk</a>
+A Concrete5 theme crafted by Ignition Theory. Built on the <a target="_blank" href="http://c5base.ignitiontheory.net">C5Base theme framework</a>.<br/>For helpful guides on how to use this theme or to ask us for some support, please visit <a target="_blank" href="http://help.ignitiontheory.co.uk">help.ignitiontheory.co.uk</a>
