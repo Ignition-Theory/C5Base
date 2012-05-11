@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+  /* Collapse layout areas */
+  .ccm-layout-cell {
+    width: 100% !important;
+  }
+  .ccm-layout-col-spacing {
+    margin: 0 !important;
+  }
+}
+.ui-dialog .input-prepend input:focus,
+.ui-dialog .input-append input:focus,
+.ui-dialog .input-prepend select:focus,
+.ui-dialog .input-append select:focus,
+.ui-dialog .input-prepend .uneditable-input:focus,
+.ui-dialog .input-append .uneditable-input:focus {
+  z-index: 0;
+}
+.ui-dialog .input-prepend input,
+.ui-dialog .input-append input,
+.ui-dialog .input-prepend select,
+.ui-dialog .input-append select,
+.ui-dialog .input-prepend .uneditable-input,
+.ui-dialog .input-append .uneditable-input {
+  position: static;
+}

@@ -16,7 +16,6 @@ less = {}; less.env = 'development'; //prevent less from caching .less files.
 <script src="<?php echo $this->getThemePath(); ?>/js/jquery.validationEngine-en.js"></script>
 <script src="<?php echo $this->getThemePath(); ?>/js/jquery.validationEngine.js"></script>
 
-
 <script src="<?php echo $this->getThemePath(); ?>/js/plugins.js"></script>
 <script src="<?php echo $this->getThemePath(); ?>/js/script.js"></script>
 <!-- end scripts-->

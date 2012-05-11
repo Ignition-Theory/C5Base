@@ -8,8 +8,24 @@
 	<!-- Include Nav & Logo etc. -->
 	<?php $this->inc('elements/page_header.php'); ?>
 	
-	<div class="row-fluid">
-		<div class="pageBody">
+	<div class="pageBody">
+	
+		<div class="row-fluid">
+			<div class="span12">
+				<section class="areaMain">
+					<?php 
+					$a = new Area('Header');
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_theme.php');
+					$a->setCustomTemplate('image','c5base_theme.php');
+					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->display($c);
+					?>
+				</section>
+			</div>
+		</div>
+	
+		<div class="row-fluid">
 			<div class="span6">
 				<section class="areaMain">
 					<?php 
@@ -18,6 +34,7 @@
 					$a->setCustomTemplate('content','c5base_theme.php');
 					$a->setCustomTemplate('image','c5base_theme.php');
 					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->setCustomTemplate('youtube','c5base_theme.php');
 					$a->display($c);
 					?>
 				</section>
@@ -31,6 +48,7 @@
 					$a->setCustomTemplate('content','c5base_theme.php');
 					$a->setCustomTemplate('image','c5base_theme.php');
 					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->setCustomTemplate('youtube','c5base_theme.php');
 					$a->display($c);
 					?>
 				</section>

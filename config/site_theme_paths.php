@@ -26,5 +26,3 @@ $v->setThemeByPath('/register', "yourtheme");
 $v = View::getInstance();
 $v->setThemeByPath('/page_forbidden', "c5base");
 $v->setThemeByPath('/page_not_found', "c5base");
-$v->setThemeByPath('/page_forbidden', "c5base_dev");
-$v->setThemeByPath('/page_not_found', "c5base_dev");

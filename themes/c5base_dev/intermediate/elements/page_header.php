@@ -9,7 +9,7 @@ Global to site. Each Page Type template includes this and other similar elements
 	<div class="row-fluid">
 	
 		<!-- Area for Site Logo -->
-		<div class="span4 siteLogo">
+		<div class="span5 siteLogo">
 			<?php 
 			$a = new GlobalArea('Logo');
 			// Display site title unless block is present
@@ -22,7 +22,7 @@ Global to site. Each Page Type template includes this and other similar elements
 		</div>	
 		
 		<!-- Navigation -->
-		<div class="span8 siteNavigation">		
+		<div class="span7 siteNavigation">		
 			<?php
 			$a = new GlobalArea('Header Nav');
 			$a->setCustomTemplate('autonav','c5base_theme.php');

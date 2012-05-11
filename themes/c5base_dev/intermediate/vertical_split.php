@@ -11,7 +11,7 @@
 	
 		<div class="row-fluid">
 			<div class="span12">
-				<section class="areaMain">
+				<section class="areaTop">
 					<?php 
 					$a = new Area('Main');
 					$a->setCustomTemplate('autonav','c5base_theme.php');
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row-fluid">
 			<div class="span12">
 				<section class="areaMain">
 					<?php 
