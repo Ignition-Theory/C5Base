@@ -4412,6 +4412,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 	========================================================================== */
 .siteMap {
   background: #fff;
+  margin: 0;
   padding: 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4602,6 +4603,9 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .siteMap li li li a:visited:before {
   color: #ccae14;
   font-size: 9px;
+}
+.block_content > *:last-child {
+  margin-bottom: 0;
 }
 /* 	==== Image Styling ====
 	A collection of effects rendered on top of images.
@@ -4935,7 +4939,7 @@ body.rtl .formError .formErrorArrow {
 }
 /*  ====== c5base_theme.php ======
 	Builds upon c5base_basic.php and fits theme design
-	========================================================================= */.embed-container {
+	========================================================================= */.youtube-container {
   position: relative;
   padding-bottom: 56.25%;
   /* 16/9 ratio */
@@ -4947,9 +4951,9 @@ body.rtl .formError .formErrorArrow {
   overflow: hidden;
   max-width: 600px;
 }
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -5010,9 +5014,6 @@ body {
 .pageHeader:after {
   clear: both;
 }
-.siteLogo {
-  text-align: center;
-}
 /*  ---- Body ----
 	The top section of the document. Contains page content.
 	--------------------------------------------------------------------------*/
@@ -5065,12 +5066,21 @@ body {
 /*  ====== Responsive Fixes ======
 	make the page elements resonsive at various resomolutions
 	========================================================================= */
+/*  ---- Mobile ----
+	Collapsed columns
+	--------------------------------------------------------------------------*/
+@media (max-width: 980px) {
+  .siteLogo {
+    text-align: center;
+  }
+}
 /*	******** page.less ********
 	Layouts for the header, footer and different Page Types
 	************************************************************************* */
 /*  ====== Basic Styling ======
 	Third-party frameworks upon which the theme is based
 	========================================================================= */
+.areaHeader,
 .areaMain,
 .areaSidebar,
 .areaTop {
@@ -5078,96 +5088,119 @@ body {
 	------------------------------------------------------------------------- */
 
 }
+.areaHeader p,
 .areaMain p,
 .areaSidebar p,
 .areaTop p {
   font-size: 1em;
 }
+.areaHeader h1,
 .areaMain h1,
 .areaSidebar h1,
 .areaTop h1,
+.areaHeader h2,
 .areaMain h2,
 .areaSidebar h2,
 .areaTop h2,
+.areaHeader h3,
 .areaMain h3,
 .areaSidebar h3,
 .areaTop h3,
+.areaHeader h4,
 .areaMain h4,
 .areaSidebar h4,
 .areaTop h4,
+.areaHeader h5,
 .areaMain h5,
 .areaSidebar h5,
 .areaTop h5,
+.areaHeader h6,
 .areaMain h6,
 .areaSidebar h6,
 .areaTop h6 {
   text-transform: uppercase;
 }
+.areaHeader h1 small,
 .areaMain h1 small,
 .areaSidebar h1 small,
 .areaTop h1 small,
+.areaHeader h2 small,
 .areaMain h2 small,
 .areaSidebar h2 small,
 .areaTop h2 small,
+.areaHeader h3 small,
 .areaMain h3 small,
 .areaSidebar h3 small,
 .areaTop h3 small,
+.areaHeader h4 small,
 .areaMain h4 small,
 .areaSidebar h4 small,
 .areaTop h4 small,
+.areaHeader h5 small,
 .areaMain h5 small,
 .areaSidebar h5 small,
 .areaTop h5 small,
+.areaHeader h6 small,
 .areaMain h6 small,
 .areaSidebar h6 small,
 .areaTop h6 small {
   text-transform: capitalize;
 }
+.areaHeader h1,
 .areaMain h1,
 .areaSidebar h1,
 .areaTop h1 {
   font-size: 38px;
 }
+.areaHeader h1 small,
 .areaMain h1 small,
 .areaSidebar h1 small,
 .areaTop h1 small {
   font-size: 28px;
 }
+.areaHeader h2,
 .areaMain h2,
 .areaSidebar h2,
 .areaTop h2 {
   font-size: 30px;
 }
+.areaHeader h2 small,
 .areaMain h2 small,
 .areaSidebar h2 small,
 .areaTop h2 small {
   font-size: 24px;
 }
+.areaHeader h3,
 .areaMain h3,
 .areaSidebar h3,
 .areaTop h3 {
   font-size: 24px;
 }
+.areaHeader h3 small,
 .areaMain h3 small,
 .areaSidebar h3 small,
 .areaTop h3 small {
   font-size: 20px;
 }
+.areaHeader h4,
 .areaMain h4,
 .areaSidebar h4,
 .areaTop h4 {
   font-size: 18px;
 }
+.areaHeader h4 small,
 .areaMain h4 small,
 .areaSidebar h4 small,
 .areaTop h4 small {
   font-size: 14px;
 }
+.areaHeader h5,
 .areaMain h5,
 .areaSidebar h5,
 .areaTop h5 {
   font-size: 16px;
 }
+.areaHeader h6,
 .areaMain h6,
 .areaSidebar h6,
 .areaTop h6 {
@@ -5210,7 +5243,17 @@ body {
 }
 .areaTop {
   margin-bottom: 20px;
+  padding: 10px;
 }
+.areaHeader {
+  margin-bottom: 20px;
+  padding: 10px 20px	;
+  background: #D0CFB0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.areaHeader > *:last-child,
 .areaMain > *:last-child,
 .areaSidebar > *:last-child,
 .areaTop > *:last-child {

@@ -7,7 +7,29 @@
 
 	<!-- Include Nav & Logo etc. -->
 	<?php $this->inc('elements/page_header.php'); ?>
+	
 	<div class="pageBody">
+	
+		<?php 
+		$a = new CountableArea('Header');
+		if (($a->getTotalBlocksInArea($c) > 0) || ($c->isEditMode())) : ?>
+		<div class="row-fluid">
+			<div class="span12">
+				<section class="areaHeader">
+					<?php 
+					$a->setCustomTemplate('autonav','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_basic.php');
+					$a->setCustomTemplate('search','c5base_basic.php');
+					$a->setCustomTemplate('form','c5base_theme.php');
+					$a->setCustomTemplate('slideshow','c5base_basic.php');
+					$a->setCustomTemplate('youtube','c5base_basic.php');
+					$a->setCustomTemplate('next_previous','c5base_basic.php');
+					$a->display($c);
+					?>
+				</section>
+			</div>
+		</div>
+		<?php endif; ?>
 	
 		<div class="row-fluid">
 			<div class="span12">
@@ -15,9 +37,12 @@
 					<?php 
 					$a = new Area('Main');
 					$a->setCustomTemplate('autonav','c5base_theme.php');
-					$a->setCustomTemplate('content','c5base_theme.php');
-					$a->setCustomTemplate('image','c5base_theme.php');
-					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_basic.php');
+					$a->setCustomTemplate('search','c5base_basic.php');
+					$a->setCustomTemplate('form','c5base_theme.php');
+					$a->setCustomTemplate('slideshow','c5base_basic.php');
+					$a->setCustomTemplate('youtube','c5base_basic.php');
+					$a->setCustomTemplate('next_previous','c5base_basic.php');
 					$a->display($c);
 					?>
 				</section>
@@ -30,9 +55,12 @@
 					<?php 
 					$a = new Area('Main 2');
 					$a->setCustomTemplate('autonav','c5base_theme.php');
-					$a->setCustomTemplate('content','c5base_theme.php');
-					$a->setCustomTemplate('image','c5base_theme.php');
-					$a->setCustomTemplate('search','c5base_theme.php');
+					$a->setCustomTemplate('content','c5base_basic.php');
+					$a->setCustomTemplate('search','c5base_basic.php');
+					$a->setCustomTemplate('form','c5base_theme.php');
+					$a->setCustomTemplate('slideshow','c5base_basic.php');
+					$a->setCustomTemplate('youtube','c5base_basic.php');
+					$a->setCustomTemplate('next_previous','c5base_basic.php');
 					$a->display($c);
 					?>
 				</section>

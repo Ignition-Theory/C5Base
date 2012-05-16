@@ -8,8 +8,8 @@
 	<!-- Include Nav & Logo etc. -->
 	<?php $this->inc('elements/page_header.php'); ?>
 	
-	<div class="row-fluid">
-		<div class="pageBody">
+	<div class="pageBody">
+		<div class="row-fluid">
 			<div class="span12">
 				<section class="areaMain">
 					<?php print $innerContent; ?>

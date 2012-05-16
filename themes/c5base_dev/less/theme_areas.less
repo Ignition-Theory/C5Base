@@ -9,6 +9,7 @@
 	Third-party frameworks upon which the theme is based
 	========================================================================= */
 
+.areaHeader,
 .areaMain,
 .areaSidebar,
 .areaTop {	
@@ -62,11 +63,7 @@
 	h6 {
 	  font-size: 16px;
 	}
-		
-	
-	
 }
-
 
 .areaSidebar,
 .areaTop {
@@ -97,10 +94,18 @@
 
 .areaTop {
 	margin-bottom: 20px;
+	padding: 10px;
 }
 
+.areaHeader {
+	margin-bottom: 20px;
+	padding: 10px 20px	;
+	background: #D0CFB0;
+	.border-radius(10px);
+}
 
 // Remove margins from last block
+.areaHeader > *:last-child,
 .areaMain > *:last-child,
 .areaSidebar > *:last-child,
 .areaTop > *:last-child {

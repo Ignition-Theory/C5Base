@@ -5,6 +5,8 @@ Contains Navigation, Logo and other header elements. Add structural elements tha
 Global to site. Each Page Type template includes this and other similar elements.
 ================================================================================================= -->
 
+<?php Loader::model('countable_area'); ?>
+
 <header class="pageHeader">
 	<div class="row-fluid">
 	
