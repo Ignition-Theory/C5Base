@@ -1,4 +1,4 @@
-.embed-container {
+.youtube-container {
   position: relative;
   padding-bottom: 56.25%;
   /* 16/9 ratio */
@@ -10,9 +10,9 @@
   overflow: hidden;
   max-width: 600px;
 }
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
   position: absolute;
   top: 0;
   left: 0;
