@@ -7,8 +7,7 @@
   /* IE6 workaround*/
 
   height: 0;
-  overflow: hidden;
-  max-width: 600px;
+  overflow: hidden;	
 }
 .youtube-container iframe,
 .youtube-container object,

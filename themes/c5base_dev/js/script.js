@@ -17,12 +17,4 @@
     s.parentNode.insertBefore(wf, s);
   })(); 
   
- 
-
-
-/* Autostart carousel slideshows */
-$('.carousel').carousel('cycle');
-
-
-
 

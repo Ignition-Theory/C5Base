@@ -7,6 +7,7 @@
 	 
 	<?php
 	$isFirst = true;
+	$durationAdd = 0;
 	foreach($images as $imgInfo) {
 		$f = File::getByID($imgInfo['fID']);
 		$title = $f->getApprovedVersion()->getTitle();
@@ -28,10 +29,21 @@
 			
 			</div>
 	
-			<?php $isFirst = false;
+			<?php
+			$durationAdd += $imgInfo['duration'];
+			$isFirst = false;
 		}
 	}
+	$durationAvg = ($durationAdd/count($images)*1000);
 	?>
 	
 	</div>
 </div>
+
+<script type="text/javascript">
+$(window).bind("load", function() {
+   	$('#myCarousel<?php echo intval($bID)?>').carousel({
+	  interval: <?php echo $durationAvg; ?>
+	})
+});
+</script>

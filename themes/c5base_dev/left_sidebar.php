@@ -17,13 +17,6 @@
 			<div class="span12">
 				<section class="areaHeader">
 					<?php 
-					$a->setCustomTemplate('autonav','c5base_theme.php');
-					$a->setCustomTemplate('content','c5base_basic.php');
-					$a->setCustomTemplate('search','c5base_basic.php');
-					$a->setCustomTemplate('form','c5base_theme.php');
-					$a->setCustomTemplate('slideshow','c5base_basic.php');
-					$a->setCustomTemplate('youtube','c5base_basic.php');
-					$a->setCustomTemplate('next_previous','c5base_basic.php');
 					$a->display($c);
 					?>
 				</section>
@@ -36,13 +29,6 @@
 				<section class="areaSidebar">
 					<?php 
 					$a = new Area('Sidebar');
-					$a->setCustomTemplate('autonav','c5base_theme.php');
-					$a->setCustomTemplate('content','c5base_basic.php');
-					$a->setCustomTemplate('search','c5base_basic.php');
-					$a->setCustomTemplate('form','c5base_theme.php');
-					$a->setCustomTemplate('slideshow','c5base_basic.php');
-					$a->setCustomTemplate('youtube','c5base_basic.php');
-					$a->setCustomTemplate('next_previous','c5base_basic.php');
 					$a->display($c);
 					?>
 				</section>
@@ -52,13 +38,6 @@
 				<section class="areaMain">
 					<?php 
 					$a = new Area('Main');
-					$a->setCustomTemplate('autonav','c5base_theme.php');
-					$a->setCustomTemplate('content','c5base_basic.php');
-					$a->setCustomTemplate('search','c5base_basic.php');
-					$a->setCustomTemplate('form','c5base_theme.php');
-					$a->setCustomTemplate('slideshow','c5base_basic.php');
-					$a->setCustomTemplate('youtube','c5base_basic.php');
-					$a->setCustomTemplate('next_previous','c5base_basic.php');
 					$a->display($c);
 					?>
 				</section>
