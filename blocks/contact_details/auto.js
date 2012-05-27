@@ -1,7 +1,11 @@
 ccmValidateBlockForm = function() {
 	
-	if ($('#field_1_textbox_text').val() == '') {
-		ccm_addError('Missing required text: First Name');
+	if ($('#orgName').val() == '' && $('#cardType').val() == '0') {
+		ccm_addError('Enter an Organisation Name.');
+	}
+	
+	if ($('#firstName').val() == '' && $('#lastName').val() == '' && $('#cardType').val() == '1') {
+		ccm_addError('Enter a First or Last Name.');
 	}
 	
 	return false;
@@ -10,9 +14,8 @@ ccmValidateBlockForm = function() {
 
 refreshTypeControls = function() {
 	var cardType = $('#cardType').val();
-	$('#orgName').toggle(cardType == 0);
+	$('#name').toggle(cardType == 0);
 	$('#psnName').toggle(cardType == 1);
-	$('#psnMobile').toggle(cardType == 1);
 	$('#psnRole').toggle(cardType == 1);
 }
 

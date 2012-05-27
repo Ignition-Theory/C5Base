@@ -4,6 +4,7 @@
 		<field name="bID" type="I"><key /><unsigned /></field>
 
 		<field name="cardType" type="I"></field>
+		<field name="vcardDownload" type="x"></field>
 
 		<!-- Name -->
 		<field name="orgName" type="X"></field>
@@ -14,9 +15,12 @@
 		<field name="honorificSuffixName" type="X"></field>
 		
 		<field name="role" type="X"></field>
+		<field name="category" type="X"></field>
 						
-		<field name="telephone" type="X"></field>
-		<field name="mobile" type="X"></field>
+		<field name="phoneType1" type="X"></field>
+		<field name="phoneNumber1" type="X"></field>
+		<field name="phoneType2" type="X"></field>
+		<field name="phoneNumber2" type="X"></field>
 		
 		<field name="email" type="X"></field>
 

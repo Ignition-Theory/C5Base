@@ -1,2 +1,2 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied.");
-$this->inc('edit.php');
+$this->inc('form_html_setup.php');

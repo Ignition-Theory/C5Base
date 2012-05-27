@@ -8,6 +8,7 @@ class ContactDetailsBlockController extends BlockController {
 	
 	protected $btInterfaceWidth = "700";
 	protected $btInterfaceHeight = "450";
+	protected $btWrapperClass = 'ccm-ui';
 	
 	protected $btCacheBlockRecord = true;
 	protected $btCacheBlockOutput = true;
@@ -20,19 +21,52 @@ class ContactDetailsBlockController extends BlockController {
 		return $this->firstName;
 		return $this->midName;
 		return $this->lastName;
-		return $this->honorificName;
-		return $this->honorificSuffixName;
-		
+		return $this->category;
 		return $this->role;
-						
-		return $this->telephone;
-		return $this->mobile;
 		
-		return $this->email;
-
-		return $this->addressStreet;
-		return $this->addressCity;
-		return $this->addressCounty;
-		return $this->addressCode;
 	}
+	
+	public function view() {
+	
+		// Change the abbreviated Telephone 1 type in to proper english
+		switch ($this->phoneType1) {
+		case "home":
+			  $this->set('phoneType1_Label',"Home:");
+			  break;
+		case "work":
+			  $this->set('phoneType1_Label',"Work:");
+			  break;
+		case "cell":
+			  $this->set('phoneType1_Label',"Mobile:");
+			  break;
+		case "fax":
+			 $this->set('phoneType1_Label',"Fax:");
+			  break;
+		default:
+			$this->set('phoneType1_Label',"Phone:");
+		}
+		
+		// Change the abbreviated Telephone 2 type in to proper english
+		switch ($this->phoneType2) {
+		case "home":
+			  $this->set('phoneType2_Label',"Home:");
+			  break;
+		case "work":
+			  $this->set('phoneType2_Label',"Work:");
+			  break;
+		case "cell":
+			  $this->set('phoneType2_Label',"Mobile:");
+			  break;
+		case "fax":
+			 $this->set('phoneType2_Label',"Fax:");
+			  break;
+		default:
+			$this->set('phoneType2_Label',"Phone:");
+		}
+
+	}
+	
+
+	
+	
 }

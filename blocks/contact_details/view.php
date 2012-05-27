@@ -31,15 +31,33 @@
 	</div>
 	<?php  endif; ?>
 	
-	<?php  if ($cardType == 1 && !empty($role)): ?>
-		<span class="category"><?php  echo htmlentities($role, ENT_QUOTES, APP_CHARSET); ?></span>
+	<?php  if (!empty($category)): ?>
+		<span class="category"><?php  echo htmlentities($category, ENT_QUOTES, APP_CHARSET); ?></span>
 	<?php  endif; ?>
 	
-	<div class="cardGroup cardTelephone">
-		<?php  if (!empty($telephone)): ?>
-			<span class="tel"><?php  echo htmlentities($telephone, ENT_QUOTES, APP_CHARSET); ?></span>
-		<?php  endif; ?>
+	<?php  if ($cardType == 1 && !empty($role)): ?>
+		<span class="role"><?php  echo htmlentities($role, ENT_QUOTES, APP_CHARSET); ?></span>
+	<?php  endif; ?>
+	
+	<?php  if (!empty($phoneNumber1)): ?>
+	<div class="cardGroup cardTelephone tel">
+
+		<span class="type" style="display:none;"><?php  echo htmlentities($phoneType1, ENT_QUOTES, APP_CHARSET); ?></span> <!-- Don't display the true type -->
+		<span><?php  echo htmlentities($phoneType1_Label, ENT_QUOTES, APP_CHARSET); ?></span> <!-- Display the human readable version instead -->
+
+		<span class="value"><?php  echo htmlentities($phoneNumber1, ENT_QUOTES, APP_CHARSET); ?></span>
 	</div>
+	<?php  endif; ?>
+	
+	<?php  if (!empty($phoneNumber2)): ?>
+	<div class="cardGroup cardTelephone tel">
+	
+		<span class="type" style="display:none;"><?php  echo htmlentities($phoneType2, ENT_QUOTES, APP_CHARSET); ?></span> <!-- Don't display the true type -->
+		<span><?php  echo htmlentities($phoneType2_Label, ENT_QUOTES, APP_CHARSET); ?></span> <!-- Display the human readable version instead -->
+
+		<span class="value"><?php  echo htmlentities($phoneNumber2, ENT_QUOTES, APP_CHARSET); ?></span>
+	</div>
+	<?php  endif; ?>
 	
 	<?php  if (!empty($email)): ?>
 		<span class="email"><?php  echo htmlentities($email, ENT_QUOTES, APP_CHARSET); ?></span>
