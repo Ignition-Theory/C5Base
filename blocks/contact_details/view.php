@@ -1,5 +1,13 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied.");
+
+$cardUrl = $controller->generateDownloadLink();
+
+
 ?>
+
+
+
+
 
 <div class="vcard">
 	
@@ -80,5 +88,9 @@
 			<span class="postal-code"><?php  echo htmlentities($addressCode, ENT_QUOTES, APP_CHARSET); ?></span>
 		<?php  endif; ?>
 	</div>
+	
+	<a href="<?php echo $cardUrl; ?>">Download</a>
+	
+	
 	
 </div>	

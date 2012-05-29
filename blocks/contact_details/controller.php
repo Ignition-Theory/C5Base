@@ -66,7 +66,54 @@ class ContactDetailsBlockController extends BlockController {
 
 	}
 	
+	public function generateDownloadLink() {
 
+		$uh = Loader::helper('concrete/urls');
+		
+		
+		$b = $this->getBlockObject();
+		$btID = $b->getBlockTypeID();
+		$bt = BlockType::getByID($btID);
+
+		$url = $uh->getBlockTypeToolsURL($bt) . "/generate_vcard.php?";
+		
+		$url .= "cardType=" . $this->cardType . "&";
+		$url .= "orgName=" . $this->orgName . "&";
+		$url .= "firstName=" . $this->firstName . "&";
+		$url .= "midName=" . $this->midName . "&";
+		$url .= "lastName=" . $this->lastName . "&";
+		$url .= "honorificName=" . $this->honorificName . "&";
+		$url .= "honorificSuffixName=" . $this->honorificSuffixName . "&";
+		
+		$url .= "role=" . $this->role . "&";
+		$url .= "category=" . $this->category . "&";
+						
+		$url .= "phoneType1=" . $this->phoneType1 . "&";
+		$url .= "phoneNumber1=" . $this->phoneNumber1 . "&";
+		$url .= "phoneType2=" . $this->phoneType2 . "&";
+		$url .= "phoneNumber2=" . $this->phoneNumber2 . "&";
+		
+		$url .= "email=" . $this->email . "&";
+
+		$url .= "addressStreet=" . $this->addressStreet . "&";
+		$url .= "addressCity=" . $this->addressCity . "&";
+		$url .= "addressCounty=" . $this->addressCounty . "&";
+		$url .= "addressCode=" . $this->addressCode;
+
+		return $url;
+		
+	}
 	
-	
+	/*
+	public function getRssUrl($b, $tool = 'rss'){
+			$uh = Loader::helper('concrete/urls');
+			if(!$b) return '';
+			$btID = $b->getBlockTypeID();
+			$bt = BlockType::getByID($btID);
+			$c = $b->getBlockCollectionObject();
+			$a = $b->getBlockAreaObject();
+			$rssUrl = $uh->getBlockTypeToolsURL($bt)."/" . $tool . "?bID=".$b->getBlockID()."&amp;cID=".$c->getCollectionID()."&amp;arHandle=" . $a->getAreaHandle();
+			return $rssUrl;
+		}
+	*/
 }

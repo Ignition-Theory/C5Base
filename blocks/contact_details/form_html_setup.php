@@ -119,10 +119,10 @@
 					<label for="phoneType1"><?php echo t('Type')?></label>
 					<div class="input">
 						<select name="phoneType1" id="phoneType1">
-							<option value="home" <?php echo ($cardType == 'home' ? 'selected="selected"' : '')?>><?php echo t('Home')?></option>
-							<option value="work" <?php echo ($cardType == 'work' ? 'selected="selected"' : '')?>><?php echo t('Work')?></option>
-							<option value="cell" <?php echo ($cardType == 'cell' ? 'selected="selected"' : '')?>><?php echo t('Mobile')?></option>
-							<option value="fax" <?php echo ($cardType == 'fax' ? 'selected="selected"' : '')?>><?php echo t('Fax')?></option>
+							<option value="home" <?php echo ($phoneType1 == 'home' ? 'selected="selected"' : '')?>><?php echo t('Home')?></option>
+							<option value="work" <?php echo ($phoneType1 == 'work' ? 'selected="selected"' : '')?>><?php echo t('Work')?></option>
+							<option value="cell" <?php echo ($phoneType1 == 'cell' ? 'selected="selected"' : '')?>><?php echo t('Mobile')?></option>
+							<option value="fax" <?php echo ($phoneType1 == 'fax' ? 'selected="selected"' : '')?>><?php echo t('Fax')?></option>
 						</select>
 					</div>
 
@@ -136,10 +136,10 @@
 					<label for="phoneType2"><?php echo t('Type')?></label>
 					<div class="input">
 						<select name="phoneType2" id="phoneType2">
-							<option value="home" <?php echo ($cardType == 'home' ? 'selected="selected"' : '')?>><?php echo t('Home')?></option>
-							<option value="work" <?php echo ($cardType == 'work' ? 'selected="selected"' : '')?>><?php echo t('Work')?></option>
-							<option value="cell" <?php echo ($cardType == 'cell' ? 'selected="selected"' : '')?>><?php echo t('Mobile')?></option>
-							<option value="fax" <?php echo ($cardType == 'fax' ? 'selected="selected"' : '')?>><?php echo t('Fax')?></option>
+							<option value="home" <?php echo ($phoneType2 == 'home' ? 'selected="selected"' : '')?>><?php echo t('Home')?></option>
+							<option value="work" <?php echo ($phoneType2 == 'work' ? 'selected="selected"' : '')?>><?php echo t('Work')?></option>
+							<option value="cell" <?php echo ($phoneType2 == 'cell' ? 'selected="selected"' : '')?>><?php echo t('Mobile')?></option>
+							<option value="fax" <?php echo ($phoneType2 == 'fax' ? 'selected="selected"' : '')?>><?php echo t('Fax')?></option>
 						</select>
 					</div>
 			
