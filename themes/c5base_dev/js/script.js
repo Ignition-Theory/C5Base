@@ -18,3 +18,44 @@
   })(); 
   
 
+/* Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent 
+
+<script type="text/plain" class="cc-onconsent-customcookie">
+
+*/
+
+// <![CDATA[
+cc.initialise({
+	cookies: {
+		analytics: {}
+		//social: {}
+		//advertising: {},
+		/*
+		customcookie: {
+			title: 'My custom cookie title',
+			description: 'Here is a description of '+
+				'my custom type of cookie.'
+		}*/
+	},
+	settings: {
+		tagPosition: "bottom-left",
+		bannerPosition: "bottom",
+		//refreshOnConsent: true,
+		style: "light"
+	},
+	strings: {
+		//socialDefaultTitle: 'Social Media',
+		//socialDefaultDescription: 'Facebook, Twitter and other, social websites need to know who you are to work properly.',
+		analyticsDefaultTitle: 'Analytics',
+		analyticsDefaultDescription: 'We anonymously measure your use of this website to improve your experience.',
+		defaultTitle: 'Default cookie title',
+		defaultDescription: 'Default cookie description.',
+		learnMore: 'Learn more',
+		closeWindow: 'Close window'
+		//advertisingDefaultTitle: 'Advertising',
+		//advertisingDefaultDescription: 'Adverts will be chosen for, you automatically based on your past behaviour and interests.',
+	}
+});
+// ]]>
+
+/* End Cookie Consent plugin */
