@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="C5base : A theme framework for Concrete5 built on Twitter Bootstrap" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>C5base</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Ignition-Theory/C5Base">View on GitHub</a>
+
+          <h1 id="project_title">C5base</h1>
+          <h2 id="project_tagline">A theme framework for Concrete5 built on Twitter Bootstrap</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Ignition-Theory/C5Base/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Ignition-Theory/C5Base/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>C5Base - A theme framework for Concrete5</h1>
+
+<p>** Version 0.8.0 **</p>
+
+<p>This is a theme developed specifically for the <a href="http://concrete5.org">Concrete5 CMS</a>. It currently requires version 5.5.0 or above.</p>
+
+<p>Checkout the demo at <a href="http://c5base.ignitiontheory.net">c5base.ignitiontheory.net</a>.</p>
+
+<p>The theme has been developed to be used as a foundation which can be modified and built upon. All the basic groundwork has already been covered and the theme is ready to be heavily modified and turned in to a specific project. </p>
+
+<p>As well as a solid theme that is easily modified, most blocks have one or more template overides that utilise styles and functionality provided by the theme package.</p>
+
+<p>Core technologies integrated within this theme include:</p>
+
+<ul>
+<li>  <a href="http://twitter.github.com/bootstrap/index.html">Twitter Bootstrap v2</a>
+</li>
+<li>  <a href="http://astuteo.com/slickmap/">Slickmap</a>
+</li>
+<li>  <a href="http://css3pie.com/">CSSPIE</a>
+</li>
+<li>  <a href="https://github.com/posabsolute/jQuery-Validation-Engine">jQuery Validation Engine</a>
+</li>
+<li>  <a href="http://www.google.com/webfonts">Google Webfonts</a>
+</li>
+<li>  Built on <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> and <a href="http://www.initializr.com/">Initializer</a>.</li>
+<li>  Written in <a href="http://www.php.net/">PHP</a>, <a href="http://jquery.com/">jQuery</a> &amp; <a href="http://lesscss.org/">LESS</a>.</li>
+<li>  Compiled using the <a href="http://html5boilerplate.com/docs/Build-script/">HTML5 Build Script</a> &amp; <a href="http://incident57.com/less/">LESS.app</a>.</li>
+<li>  Tested using <a href="http://www.totalvalidator.com/tools/protool.html">Total Validator Pro</a>.</li>
+</ul><h2>Theme Organisation</h2>
+
+<p>The following is a breakdown of the theme structure with notes on what to modify. '[]' indicates a folder.</p>
+
+<h3>[] Theme Root (/themes/<em>theme_name</em>_dev)</h3>
+
+<p>Contains theme Page Types and misc files used by Concrete5 and all the folders listed below.</p>
+
+<h3>[] build</h3>
+
+<p>Contains the build script files and configuration. See <a href="https://github.com/h5bp/ant-build-script/wiki">https://github.com/h5bp/ant-build-script/wiki</a> for more info on running the script.</p>
+
+<p><em>Modify config/project.properties</em></p>
+
+<ul>
+<li>  Update 'dir.publish' to match project name.</li>
+<li>  Add custom page types to 'file.pages'.</li>
+</ul><h3>[] css</h3>
+
+<p>Place compiled LESS files here. Specifically 'style.less' (style.css) as that is required by the build script when compiling the production theme.</p>
+
+<h3>[] elements</h3>
+
+<p>Contains page elements that are global to the site or often re-used. Files are loaded in to page type via <code>$this-&gt;inc()</code>.</p>
+
+<h3>[] fonts</h3>
+
+<p>Custom font files. Custom fonts are often used to render text as Icons for easier styling. Font files are referenced in CSS using <code>@fontface</code>.</p>
+
+<h3>[] img</h3>
+
+<p>All images used within the theme. Also contains any images used within CSS frameworks. Contents are optimised in build script.</p>
+
+<h3>[] intermediate</h3>
+
+<p>Used by build script to hold files whilst compiling.</p>
+
+<h3>[] js</h3>
+
+<p>All javascript files go here. Any JS files placed directly in folder will be minified and concated by build script. JS Files in 'libs' folder will be left untouched.
+Remember to reference JS files in 'elements/html_foot.php' so they are called in development theme.</p>
+
+<h3>js/scripts.js</h3>
+
+<p>Application code. For any custom javascript written specifically for a project/theme.</p>
+
+<h3>js/plugins.js</h3>
+
+<p>jQuery Plugin javascript. Include plugin initialisers scripts and any plugins that cannot be contained in stand alone file.</p>
+
+<h3>[] less</h3>
+
+<p>All LESS files used within the theme. 'framework' contains CSS frameworks. Files prefixed with 'block<em>' are related to specific blocks. Files prefixed with 'theme</em>' are used to style theme pages and elements.</p>
+
+<h3>[] scripts</h3>
+
+<p>Contains any miscellaneous scripts that aren't javascript, such as '.htc'. Currently contains only 'PIE.htc' which is not yet implemented within the theme.</p>
+
+<h3>configurable_styles.css</h3>
+
+<p>Used by C5 to define configurable styles. Currently unused.</p>
+
+<h3>typography.less</h3>
+
+<p>Used by the WYSIWYG editor within C5 (TinyMCE).</p>
+
+<h2>Building Production Theme</h2>
+
+<p>The theme folder suffixed with '_dev' is a development theme and should only be used on a testing/development website. The dev theme uses javascript to render LESS and references individual jQuery plugins.</p>
+
+<p>To create a production ready theme, use the included ANT Build Script. This script will make a copy of the development theme in the '/themes' folder and optimise the code. JS + CSS is minified and concated, images are compressed and HTML is updated with new references. 'description.txt' and 'thumbnail.png' are also swapped with their '_production' counterparts.</p>
+
+<p><em>The script will not compile LESS files</em> - This must be done before running the script (see below).</p>
+
+<h2>Some Notes on the CSS</h2>
+
+<p>This theme makes extensive use of LESS. Find more info about LESS at <a href="http://lesscss.org">http://lesscss.org</a>.</p>
+
+<h3>Development Theme</h3>
+
+<p>LESS.js is used to compile LESS client side. Great during development, bad for live sites.</p>
+
+<p>'styles.less' is the core LESS file. It references all other LESS files via <code>@import</code>. 
+The only file not referenced is 'typography.less' on the themes root. This must be compiled seperately.</p>
+
+<p>See the comments included in each file for more information about it's usage.</p>
+
+<h3>Production Theme (use Build script)</h3>
+
+<p>This LESS file is pre-compiled using a local App and moved to the CSS folder. 
+LESS.app is recommended - <a href="http://incident57.com/less/">http://incident57.com/less/</a> (set to compile /less/styles.less in to adjacent /CSS/ folder.)
+The theme will reference the new single CSS file after compilation via the build script.</p>
+
+<h3>CSS Style Guide</h3>
+
+<p>The following are guidelines on how to write CSS to match with the rest of the code in this Theme.
+Following this guide allows code to remain consistent and easy to read. </p>
+
+<p>CSS should be multiline and follow the below example format.</p>
+
+<p>camelCaseElementName {
+1.  size &amp; display type
+2.  layout &amp; positioning controls (padding, width etc.)
+2.  visual stuff (colors, fonts, backgrounds)
+3.  CSS3 effects (split apart with a line between each if using vendor prefixes)
+}</p>
+
+<h2>Block Template Overrides</h2>
+
+<p>TODO</p>
+
+<h2>Miscellaneous Site Root Files</h2>
+
+<p>TODO</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">C5base maintained by <a href="https://github.com/Ignition-Theory">Ignition-Theory</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
