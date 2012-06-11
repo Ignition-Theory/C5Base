@@ -1,8 +1,8 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <!-- HTML DOCUMENT HEAD
-Edits to this page are not usually required.
 Global to site. Each Page Type template includes this and other similar elements.
+Edits to this page are not usually required.
 ================================================================================================= -->
 
 <!doctype html>

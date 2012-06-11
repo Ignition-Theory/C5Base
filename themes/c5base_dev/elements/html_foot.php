@@ -1,8 +1,8 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <!-- HTML DOCUMENT FOOT
-Add javascript plugins & scripts here. Leave out Analytics code – include that in CMS settings.
 Global to site. Each Page Type template includes this and other similar elements.
+Add javascript plugins & scripts here. Leave out Analytics code – include that in CMS settings.
 ================================================================================================= -->
 
 <!-- JavaScript at the bottom for fast page loading -->

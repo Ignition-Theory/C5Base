@@ -3,33 +3,6 @@
 	Contains @imports for all LESS files.
 	************************************************************************* */
 
-/* SOME NOTES ON THE CSS
-*
-*	This file is the core LESS file. It references all other LESS files via @import 
-*	
-*	Development Theme
-*	LESS.js is used to compile LESS client side. Great during development, bad for live sites.
-
-*	Production Theme (use Build script)
-*	This LESS file is pre-compiled using a local App and moved to the CSS folder. 
-*	LESS.app is recommended - http://incident57.com/less/ (set to compile /less/styles.less in to adjacent /CSS/ folder.)
-*	The theme will reference the new single CSS file after compilation via the build script.
-
-*	**** CSS Style Guide ****
-*	The following are guidelines on how to write CSS to match with the rest of the code in this Theme.
-*	Following this guide allows code to remain consistent and easy to read. 
-
-*	CSS should be multiline and follow the below example format.
-
-*	camelCaseElementName {
-*		1: size & display type
-*		2: layout & positioning controls (padding, width etc.)
-*		2: visual stuff (colors, fonts, backgrounds)
-*		3: CSS3 effects (split apart with a line between each if using vendor prefixes)
-*	}
-*/
-
-
 /*  ====== Frameworks ======
 	Third-party frameworks upon which the theme is based
 	========================================================================= */
@@ -109,8 +82,12 @@
 // Responsiveness
 @import "framework/responsive.less";
 
-// Responsiveness
+// jQuery Validation Engine
 @import "framework/cookieconsent.less";
+
+// Cookie Consent
+@import "framework/validation-engine.less";
+
 
 /*  ====== Block Styling ======
 	Styling for each Block type is integrated in to Theme to reduce HTTP requests.

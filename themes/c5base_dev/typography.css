@@ -1,3 +1,9 @@
+/*	******** typography.less ********
+	Used by TinyMCE when editing content
+	************************************************************************* */
+/*	******** variables.less ********
+	Variables to customize the look and feel of Bootstrap
+	************************************************************************* */
 .clearfix {
   *zoom: 1;
 }
@@ -27,7 +33,7 @@
 }
 p {
   margin: 0 0 11px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -48,9 +54,9 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: inherit;
-  font-weight: bold;
-  color: inherit;
+  font-family: Lato, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #222222;
   text-rendering: optimizelegibility;
 }
 h1 small,
@@ -450,18 +456,18 @@ a.badge:hover {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .btn-primary {
-  background-color: #0074cc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0055cc);
-  background-image: linear-gradient(top, #0088cc, #0055cc);
+  background-color: #5772a1;
+  background-image: -moz-linear-gradient(top, #5779a1, #5767a1);
+  background-image: -ms-linear-gradient(top, #5779a1, #5767a1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5779a1), to(#5767a1));
+  background-image: -webkit-linear-gradient(top, #5779a1, #5767a1);
+  background-image: -o-linear-gradient(top, #5779a1, #5767a1);
+  background-image: linear-gradient(top, #5779a1, #5767a1);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
-  border-color: #0055cc #0055cc #003580;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5779a1', endColorstr='#5767a1', GradientType=0);
+  border-color: #5767a1 #5767a1 #3c476f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0055cc;
+  *background-color: #5767a1;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -471,12 +477,12 @@ a.badge:hover {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #0055cc;
-  *background-color: #004ab3;
+  background-color: #5767a1;
+  *background-color: #4e5c90;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #004099 \9;
+  background-color: #455180 \9;
 }
 .btn-warning {
   background-color: #faa732;
